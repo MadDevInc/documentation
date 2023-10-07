@@ -1,0 +1,5 @@
+site_name: MADDev - Documentation
+theme:
+  name: material
+
+nav: ["home": "index.html", "atas": ["atas/reuniao01.md"]]
