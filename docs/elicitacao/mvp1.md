@@ -1,4 +1,6 @@
-# Beta
+# MVP 1
+Definição do primeiro MVP de Ferrero Rocheda. <br>Expectativa de uso como versão beta.
+
 
 ## Area do ferreiro
 ### Serralheria

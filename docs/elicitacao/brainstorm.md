@@ -1,4 +1,5 @@
-# Reunião 27-10-23 (brainstorm casa matix)
+# Brainstorm
+Reunião 27-10-23 (brainstorm casa matix)
 
 ## Ideias iniciais
 
