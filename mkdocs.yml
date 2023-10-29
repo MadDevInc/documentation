@@ -4,11 +4,12 @@ theme:
 
 nav: [
         "home": "index.html",
-        "atas": [
+        "Atas": [
           "atas/reuniao01.md"
         ],
-        "elicitacao": [
+        "Elicitacao": [
           "elicitacao/mvp1.md",
-          "elicitacao/brainstorm.md"
+          "elicitacao/brainstorm.md",
+          "elicitacao/backlog.md"
         ],
 ]
