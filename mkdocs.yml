@@ -12,4 +12,7 @@ nav: [
           "elicitacao/brainstorm.md",
           "elicitacao/backlog.md"
         ],
+        "GameJam": [
+          "gamejam/gamejam-goiania.md"
+        ],
 ]
