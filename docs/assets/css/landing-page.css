@@ -12,12 +12,30 @@ body {
   z-index: 10;
 }
 
-.section {
+.section1 {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   width: 75vw;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding: 3em;
+  border-radius: 3%;
+  background-color: rgba(33, 3, 54, 0.8); /* Roxo com leve transparência */
+  color: #fff;
+  position: relative; /* Para usar com o z-index */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar efeito de flutuação */
+  margin: 20px auto; /* Centraliza o card */
+  transition: transform 0.3s ease; /* Efeito de transição */
+  text-align: center;
+}
+
+.section1:hover {
+  transform: translateY(-5px); /* Move o card para cima ao passar o mouse */
+}
+
+.section1 h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .section2 {
@@ -27,7 +45,7 @@ body {
   width: 75vw;
   padding-top: 5em;
   padding-bottom: 5em;
-  color: #ef596b;
+  color: rgba(33, 3, 54, 0.8)
 }
 
 .link-handler {
@@ -149,8 +167,10 @@ h1 {
 
 .landing-section {
   width: 100%;
-  height: 90vh;
-  background-image: linear-gradient(to bottom right, #eb4476, #e18855);
+  height: 75vh;
+  /* background-image: linear-gradient(to bottom right, #0cb106, #441c47); */
+  background-image: linear-gradient(to bottom right, #8800C3, #16001f);
+
   margin: 0;
   margin-bottom: 5em;
   display: flex;
@@ -175,7 +195,7 @@ h1 {
 
 .footer {
   height: 20vh;
-  background-image: linear-gradient(to bottom right, #eb4476, #e18855);
+  background-image: linear-gradient(to bottom right, #8800C3, #16001f);
 }
 
 p {
@@ -190,4 +210,47 @@ h1,
 h2,
 h3 {
   font-family: "Palanquin Dark", sans-serif;
+}
+
+
+.collaborators-section {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.collaborator {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: row;
+}
+
+.collaborator div {
+  padding-left: 5em;
+}
+
+
+.collaborator:hover {
+  transform: translateY(-5px);
+}
+
+.collaborator img {
+  width: 150px; /* Ajuste conforme necessário */
+  height: 150px; /* Ajuste conforme necessário */
+  border-radius: 50%; /* Para deixar a imagem redonda */
+  object-fit: cover;
+}
+
+.collaborator h3 {
+  color: #6a0dad; /* Roxo */
+  margin: 10px 0 5px;
+}
+
+.collaborator p {
+  color: #333;
 }
