@@ -1,18 +1,9 @@
 site_name: MADDev - Documentation
 theme:
-  name: material
+  name: mkdocs
 
-nav: [
-        "home": "index.html",
-        "Atas": [
-          "atas/reuniao01.md"
-        ],
-        "Elicitacao": [
-          "elicitacao/mvp1.md",
-          "elicitacao/brainstorm.md",
-          "elicitacao/backlog.md"
-        ],
-        "GameJam": [
-          "gamejam/gamejam-goiania.md"
-        ],
-]
+nav:
+  - Home: "index.html"
+  - Steve is Alone: steveIsAlone/index.html
+  - Fragmento: fragmento/index.html
+  - Death Roll: deathRoll/index.html
