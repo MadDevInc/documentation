@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+.game-info {
+    margin-top: 20px;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
