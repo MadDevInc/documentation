@@ -1,9 +1,68 @@
-site_name: MADDev - Documentation
-theme:
-  name: mkdocs
+site_name: MadDev - Documentação dos Projetos
+repo_name: MadDevDocs
 
+# Configuração de tema
+theme:
+  name: material
+  palette:
+    primary: black
+    accent: red
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+  font:
+    text: Gothic
+    code: Roboto Mono
+
+# Esquema de cores customizado
+extra_css:
+  - docs/deathRoll/assets/extra.css
+
+# Plugins
+plugins:
+  - search
+
+# Extensões Markdown
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - codehilite
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+
+# Configurações de build
+strict: true
+use_directory_urls: true
 nav:
   - Home: "index.html"
+  - Death Roll:
+      - Home: deathRoll/index.md
+      - Visão Geral: deathRoll/gdd/overview.md
+      - Arte: deathRoll/gdd/art.md
+      - Mecânicas de Jogo: deathRoll/gdd/gameplay.md
+      - Narrativa: deathRoll/gdd/narrative.md
+      - Marketing: deathRoll/gdd/marketing.md
+      - Técnico: deathRoll/gdd/technical.md
+      - Design:
+          - Sistema de Cartas: deathRoll/design/cards.md
+          - Sistema de Dados: deathRoll/design/dice.md
+          - Interface de Usuário: deathRoll/design/ui.md
+          - Game: deathRoll/design/game.md
+      - Desenvolvimento:
+          - Dev Log: deathRoll/dev-log/milestones.md
+      - Gerenciamento:
+        - Roadmap: deathRoll/management/roadmap.md
+      - Equipe:
+          - Membros: deathRoll/team/team.md
   - Steve is Alone: steveIsAlone/index.html
   - Fragmento: fragmento/index.html
-  - Death Roll: deathRoll/index.html
