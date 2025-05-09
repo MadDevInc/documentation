@@ -54,14 +54,19 @@ nav:
       - Marketing: deathRoll/gdd/marketing.md
       - Técnico: deathRoll/gdd/technical.md
       - Design:
-          - Sistema de Cartas: deathRoll/design/cards.md
+          - Sistema de Cartas:
+              - Deck Completo: deathRoll/design/cards/deck.md
+              - Cartas do Jogador: deathRoll/design/cards/cards_player.md
+              - Cartas do Inimigo: deathRoll/design/cards/cards_enemy.md
           - Sistema de Dados: deathRoll/design/dice.md
           - Interface de Usuário: deathRoll/design/ui.md
           - Game: deathRoll/design/game.md
+          - Narrativo: deathRoll/design/narrativo.md
+
       - Desenvolvimento:
           - Dev Log: deathRoll/dev-log/milestones.md
       - Gerenciamento:
-        - Roadmap: deathRoll/management/roadmap.md
+          - Roadmap: deathRoll/management/roadmap.md
       - Equipe:
           - Membros: deathRoll/team/team.md
   - Steve is Alone: steveIsAlone/index.html
