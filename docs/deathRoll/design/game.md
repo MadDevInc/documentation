@@ -1,128 +1,130 @@
-# Módulo de Game Design: Núcleo do Jogo
+# Backlog - Death Roll
 
-Este documento detalha o sistema central do jogo, incluindo fluxo principal, mecânicas de combate e progressão.
+## Temas (TM)
 
-## Visão Geral do Sistema
+Os temas representam as áreas principais do desenvolvimento do jogo.
 
-### Componentes Principais
-1. **Game Manager** (`Game.gd`)   - Controla o fluxo principal do jogo
-2. **Sistema de Cartas** (`switch_card.gd`, `ui_card.gd`)   - Gerencia seleção de cartas
-3. **Sistema de Derrota** (`loss.gd`)   - Trata estado de game over
-4. **Player Manager** (`player.gd`)   - Gerencia dados do jogador
+| ID   | Nome                  | Descrição                                                      |
+| ---- | --------------------- | -------------------------------------------------------------- |
+| TM01 | Arte e Design         | Criação de cenários, personagens, itens e conceitos visuais.   |
+| TM02 | Jogabilidade          | Desenvolvimento de mecânicas de combate, mini-games e eventos. |
+| TM03 | Interface do Usuário  | Criação de menus e interações acessíveis e intuitivas.         |
+| TM04 | Áudio e Trilha Sonora | Composição de músicas e efeitos sonoros imersivos.             |
+| TM05 | Narrativa e Mundo     | Construção da história, ambientação e progressão do jogador.   |
 
-## Fluxo Principal do Jogo
+---
 
-```mermaid
-graph TD
-    A[Seleção de Cartas]   -  -> B[Transição]
-    B   -  -> C[Fase de Combate]
-    C   -  -> D{Vitória?}
-    D   -  ->|Sim| E[Próxima Fase]
-    D   -  ->|Não| F[Tela de Derrota]
-    E   -  -> B
-    F   -  -> G[Menu Principal/Repetir]
-```
+## Épicos (EP)
 
-## Mecânicas de Combate
+Os épicos são grandes blocos de trabalho dentro de cada tema.
 
-### Sequência de Turno
-1. **Rolagem de Dados**:
-     - Jogador rola 7 dados 3D
-     - Seleciona 5 para usar no combate
+### TM01 - Arte e Design
 
-2. **Aplicação de Modificadores**:
-     - Cartas do jogador são aplicadas
-     - Modificadores do inimigo são aplicados
+| ID   | Nome                     | Descrição                                               |
+| ---- | ------------------------ | ------------------------------------------------------- |
+| EP01 | Criação de Cenários      | Desenvolvimento de 9 cenários distintos para o jogo.    |
+| EP02 | Modelagem de Personagens | Modelagem de inimigos, NPCs e outros elementos visuais. |
+| EP03 | Design de Itens          | Criação de dados, cartas, baús e outros objetos.        |
 
-3. **Resolução**:
-     - Comparação de valores modificados
-     - Determinação do vencedor do round
+### TM02 - Jogabilidade
 
-4. **Progressão**:
-     - Melhor de 3 rounds
-     - 4 fases no total
+| ID   | Nome                  | Descrição                                                           |
+| ---- | --------------------- | ------------------------------------------------------------------- |
+| EP04 | Combate               | Desenvolvimento de mecânicas de combate baseadas em dados e cartas. |
+| EP05 | Mini-Games            | Implementação de mini-games para eventos aleatórios.                |
+| EP06 | Sistema de Progressão | Criação de mecânicas de progressão e escolha de caminhos.           |
 
-### Sistemas Integrados
+### TM03 - Interface do Usuário
 
-| Sistema    | Arquivo          | Responsabilidade                      |
-|   -  -  -  -  -  -  -  -  -  - |   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - |   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - |
-| Dados      | `Game.gd`        | Rolagem, seleção e cálculo de valores |
-| Cartas     | `switch_card.gd` | Seleção de habilidades passivas       |
-| Inimigos   | `Game.gd`        | Comportamento e modificadores         |
-| Progressão | `transition.gd`  | Controle de fases e dificuldade       |
+| ID   | Nome                  | Descrição                                                                |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| EP07 | Menus de Navegação    | Criação de menus para loja, deck, dados, pausa e diálogo.                |
+| EP08 | HUD e Feedback Visual | Desenvolvimento de elementos visuais para exibir informações ao jogador. |
 
-## Tabela de Estados do Jogo
+### TM04 - Áudio e Trilha Sonora
 
-| Estado            | Condição de Entrada | Ações                        | Transições Possíveis   |
-|   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - |   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - |   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - |   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - |
-| Seleção de Cartas | Início de fase      | Oferece 2 cartas aleatórias  | Transição para combate |
-| Combate           | Após transição      | Rolagem e resolução de dados | Vitória/Derrota        |
-| Vitória           | Ganhar 2 rounds     | Animação, incremento de fase | Transição ou Final     |
-| Derrota           | Perder 2 rounds     | Mostra estatísticas          | Menu/Repetir           |
+| ID   | Nome                  | Descrição                                                          |
+| ---- | --------------------- | ------------------------------------------------------------------ |
+| EP09 | Composição de Músicas | Criação de trilhas sonoras temáticas para cada círculo do Inferno. |
+| EP10 | Efeitos Sonoros       | Desenvolvimento de sons para ações e ambientação.                  |
 
-## Balanceamento e Progressão
+### TM05 - Narrativa e Mundo
 
-1. **Dificuldade Progressiva**:
-     - Inimigos ganham modificadores mais fortes
-     - Número de rerolls pode diminuir
+| ID   | Nome                           | Descrição                                                    |
+| ---- | ------------------------------ | ------------------------------------------------------------ |
+| EP11 | Construção do Mundo            | Desenvolvimento dos 9 círculos do Inferno, Purgatório e Céu. |
+| EP12 | Desenvolvimento de Personagens | Criação de personagens como Virgílio, Beatriz e chefes.      |
 
-2. **Sistema de Cartas**:
-     - Cartas oferecem combos estratégicos
-     - Novas cartas desbloqueadas progressivamente
+---
 
-3. **Pontuação**:
-     - Maior rolagem registrada
-     - Inimigos derrotados como métrica
+## Capacidades (C)
 
-## Detalhes de Implementação
+As capacidades detalham os objetivos específicos de cada épico.
 
-### Combate (Game.gd)
-```gdscript
-func play_dice(selection: Array):
-    # 1. Movimentação visual
-    await move_dice_to_center(selection)
-    
-    # 2. Cálculo de valores
-    await count_dice_player(selection)
-    
-    # 3. Aplicação de modificadores
-    await apply_player_modifiers()
-    
-    # 4. Resolução do inimigo
-    await enemy_sum_count()
-    var result = await apply_enemy_modifiers()
-    
-    # 5. Determinação do vencedor
-    await decide_winner(result)
-```
+### EP01 - Criação de Cenários
 
-### Seleção de Cartas
-```gdscript
-func handle_card_selection(selected_card):
-    Global.deck_player.append(selected_card)
-    disable_cards()
-    play_outro_animation()
-```
+| ID  | Nome               | Descrição                                                     |
+| --- | ------------------ | ------------------------------------------------------------- |
+| C01 | Design de Cenários | Criar 9 cenários distintos com estética única.                |
+| C02 | Ambientação Visual | Adicionar elementos visuais que reforcem a narrativa do jogo. |
 
-### Derrota
-```gdscript
-func _on_retry_button_pressed():
-    Global.reset_stats()
-    $AnimationPlayer.play("outro")
-    retry = true
-```
+### EP04 - Combate
 
-## Próximos passos
+| ID  | Nome                | Descrição                                                   |
+| --- | ------------------- | ----------------------------------------------------------- |
+| C03 | Sistema de Dados    | Implementar mecânicas de lançamento e manipulação de dados. |
+| C04 | Sistema de Cartas   | Desenvolver mecânicas para uso de cartas no combate.        |
+| C05 | Feedback de Combate | Exibir informações como vida, combos e jogadas do inimigo.  |
 
-1. **Adicionar os elementos de rogue-like**:
-     - Caminhos alternativos após um encontro
-     - Encontros aleatórios
-     - Sistema de mapa com trilhas
+### EP07 - Menus de Navegação
 
-2. **Profundidade Estratégica**:
-     - Combos entre cartas específicas
-     - Dados com habilidades especiais
+| ID  | Nome           | Descrição                                              |
+| --- | -------------- | ------------------------------------------------------ |
+| C06 | Menu Principal | Criar menu inicial com opções de jogo e configurações. |
+| C07 | Menu da Loja   | Desenvolver interface para compra e venda de itens.    |
+| C08 | Menu do Deck   | Criar interface para visualização e edição do baralho. |
 
-3. **Progressão Meta**:
-     - Desbloqueio de cartas permanentes
-     - Melhorias para modificadores
+---
+
+## Funcionalidades (F)
+
+As funcionalidades são tarefas específicas que implementam as capacidades.
+
+### C03 - Sistema de Dados
+
+| ID  | Nome              | Descrição                                             |
+| --- | ----------------- | ----------------------------------------------------- |
+| F01 | Lançar Dados      | Permitir que o jogador lance dados durante o combate. |
+| F02 | Rolar Novamente   | Implementar a opção de reroll para dados específicos. |
+| F03 | Exibir Resultados | Mostrar os valores finais dos dados lançados.         |
+
+### C07 - Menu da Loja
+
+| ID  | Nome          | Descrição                                                |
+| --- | ------------- | -------------------------------------------------------- |
+| F04 | Comprar Itens | Permitir que o jogador compre cartas e dados.            |
+| F05 | Vender Itens  | Permitir que o jogador venda cartas para obter recursos. |
+
+---
+
+## Histórias de Usuário (US)
+
+As histórias de usuário detalham as interações do jogador com o sistema.
+
+| ID   | Nome                      | Funcionalidade | Descrição                                                                             |
+| ---- | ------------------------- | -------------- | ------------------------------------------------------------------------------------- |
+| US01 | Criar Cenários            | F01            | Como designer, quero criar 9 cenários distintos para enriquecer o jogo.               |
+| US02 | Jogar Dados no Combate    | F01            | Como jogador, quero lançar dados para atacar inimigos durante o combate.              |
+| US03 | Participar de Mini-Games  | F03            | Como jogador, quero participar de mini-games para ganhar recompensas.                 |
+| US04 | Navegar pelos Menus       | F04            | Como jogador, quero acessar menus intuitivos para gerenciar meu progresso.            |
+| US05 | Explorar o Mapa           | F05            | Como jogador, quero explorar o mapa e encontrar encontros aleatórios.                 |
+| US06 | Comprar Cartas na Loja    | F04            | Como jogador, quero comprar cartas na loja para melhorar meu baralho.                 |
+| US07 | Usar Artefatos no Combate | F03            | Como jogador, quero usar artefatos durante o combate para alterar o curso da batalha. |
+
+---
+
+## Histórico de Revisões
+
+| Data       | Autor                                      | Alterações                                         |
+| ---------- | ------------------------------------------ | -------------------------------------------------- |
+| 2025-05-13 | [Mateus Vieira](https://github.com/matix0) | Reestruturação do backlog para maior consistência. |
