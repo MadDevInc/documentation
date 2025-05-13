@@ -11,4 +11,4 @@
 - Efeitos passivos que modificam mecânicas
 - Aquisição através de derrota de inimigos
 
-[Ver documentação detalhada do sistema de cartas →](../design/cards.md)
+[Ver documentação detalhada do sistema de cartas →](../design/cards/deck.md)
