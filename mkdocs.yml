@@ -67,6 +67,7 @@ nav:
           - Dev Log: deathRoll/dev-log/milestones.md
       - Gerenciamento:
           - Roadmap: deathRoll/management/roadmap.md
+          - Sprints: deathRoll/management/sprints.md
       - Equipe:
           - Membros: deathRoll/team/team.md
   - Steve is Alone: steveIsAlone/index.html

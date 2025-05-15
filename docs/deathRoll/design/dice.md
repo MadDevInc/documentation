@@ -1,5 +1,16 @@
 # Sistema de Dados
-## Visão Geral do Sistema
+
+## Introdução
+
+O sistema de dados é um dos componentes centrais do jogo, responsável por gerenciar a rolagem, seleção e manipulação de dados físicos 3D. Ele combina elementos visuais, físicos e lógicos para criar uma experiência interativa e imersiva para o jogador.
+
+Este sistema foi projetado para ser flexível e expansível, permitindo a adição de novos tipos de dados, modificadores e efeitos visuais no futuro. Além disso, ele se integra diretamente com outros sistemas do jogo, como o sistema de cartas e a interface de usuário, garantindo uma jogabilidade coesa.
+
+### Objetivos do Sistema
+1. Simular a rolagem de dados físicos com precisão e realismo.
+2. Permitir que o jogador interaja com os dados de forma intuitiva.
+3. Oferecer suporte para modificadores e combinações que afetam o resultado final.
+4. Garantir que o sistema seja expansível para futuras funcionalidades.
 
 ### Componentes Principais
 1. **Dice Slots (dice_slots.gd)**
