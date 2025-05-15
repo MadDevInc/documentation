@@ -1,0 +1,1547 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../cards/cards_enemy/">
+      
+      
+        <link rel="next" href="../ui/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>Sistema de Dados - MadDev - Documentação dos Projetos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gothic:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Gothic";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../docs/deathRoll/assets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sistema-de-dados" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MadDev - Documentação dos Projetos" class="md-header__button md-logo" aria-label="MadDev - Documentação dos Projetos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MadDev - Documentação dos Projetos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sistema de Dados
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Death Roll
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../steveIsAlone/" class="md-tabs__link">
+        
+  
+    
+  
+  Steve is Alone
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../fragmento/" class="md-tabs__link">
+        
+  
+    
+  
+  Fragmento
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MadDev - Documentação dos Projetos" class="md-nav__button md-logo" aria-label="MadDev - Documentação dos Projetos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MadDev - Documentação dos Projetos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Death Roll
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Death Roll
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/art/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/gameplay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mecânicas de Jogo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/narrative/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Narrativa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/marketing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/technical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Técnico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Design
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9_1" id="__nav_2_9_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sistema de Cartas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            Sistema de Cartas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cards/deck/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deck Completo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cards/cards_player/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cartas do Jogador
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cards/cards_enemy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cartas do Inimigo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sistema de Dados
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Sistema de Dados
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos do Sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#componentes-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes Principais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabela-de-funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Funcionalidades
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-de-jogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fluxo de Jogo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especificacoes-tecnicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Especificações Técnicas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Especificações Técnicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dice-slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dice Slots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#die-dado-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      Die (Dado 3D)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balanceamento-e-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Balanceamento e Regras
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximos Passos
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interface de Usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../narrativo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Narrativo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Desenvolvimento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Desenvolvimento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev-log/milestones/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dev Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Gerenciamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            Gerenciamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/sprints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Equipe
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            Equipe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/team/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Membros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../steveIsAlone/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Steve is Alone
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fragmento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fragmento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sistema-de-dados">Sistema de Dados<a class="headerlink" href="#sistema-de-dados" title="Permanent link">&para;</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+<p>O sistema de dados é um dos componentes centrais do jogo, responsável por gerenciar a rolagem, seleção e manipulação de dados físicos 3D. Ele combina elementos visuais, físicos e lógicos para criar uma experiência interativa e imersiva para o jogador.</p>
+<p>Este sistema foi projetado para ser flexível e expansível, permitindo a adição de novos tipos de dados, modificadores e efeitos visuais no futuro. Além disso, ele se integra diretamente com outros sistemas do jogo, como o sistema de cartas e a interface de usuário, garantindo uma jogabilidade coesa.</p>
+<h3 id="objetivos-do-sistema">Objetivos do Sistema<a class="headerlink" href="#objetivos-do-sistema" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Simular a rolagem de dados físicos com precisão e realismo.</li>
+<li>Permitir que o jogador interaja com os dados de forma intuitiva.</li>
+<li>Oferecer suporte para modificadores e combinações que afetam o resultado final.</li>
+<li>Garantir que o sistema seja expansível para futuras funcionalidades.</li>
+</ol>
+<h3 id="componentes-principais">Componentes Principais<a class="headerlink" href="#componentes-principais" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Dice Slots (dice_slots.gd)</strong></p>
+<ul>
+<li>Gerencia a interface de seleção de dados</li>
+<li>Controla botões de ação (Jogar, Rerolar)</li>
+<li>Mantém registro dos dados selecionados</li>
+</ul>
+</li>
+<li>
+<p><strong>Die (die.gd)</strong></p>
+<ul>
+<li>Representa um dado físico 3D</li>
+<li>Calcula o valor resultante da rolagem</li>
+<li>Gerencia efeitos visuais e físicos</li>
+</ul>
+</li>
+</ol>
+<h2 id="tabela-de-funcionalidades">Tabela de Funcionalidades<a class="headerlink" href="#tabela-de-funcionalidades" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Funcionalidade</th>
+<th>Descrição</th>
+<th>Parâmetros</th>
+<th>Efeitos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>add_dice</code></td>
+<td>Adição de dados</td>
+<td>Adiciona novo dado à área de seleção</td>
+<td><code>value</code>: Valor do dado</td>
+<td>Atualiza contagem, verifica limites</td>
+</tr>
+<tr>
+<td><code>select_die</code></td>
+<td>Seleção de dado</td>
+<td>Marca dado para ações futuras</td>
+<td><code>die</code>: Referência ao dado</td>
+<td>Ativa botões quando 5 dados selecionados</td>
+</tr>
+<tr>
+<td><code>deselect_die</code></td>
+<td>Desseleção</td>
+<td>Remove dado da seleção atual</td>
+<td><code>die</code>: Referência ao dado</td>
+<td>Desativa botões se seleção vazia</td>
+</tr>
+<tr>
+<td><code>_on_play_button_pressed</code></td>
+<td>Ação de jogar</td>
+<td>Confirma seleção de dados</td>
+<td>-</td>
+<td>Envia dados para lógica principal</td>
+</tr>
+<tr>
+<td><code>_on_reroll_button_pressed</code></td>
+<td>Rerolagem</td>
+<td>Substitui dados selecionados</td>
+<td>-</td>
+<td>Remove e solicita novos dados</td>
+</tr>
+<tr>
+<td><code>_process</code> (Die)</td>
+<td>Detecção de valor</td>
+<td>Calcula face superior após rolagem</td>
+<td>-</td>
+<td>Determina valor final do dado</td>
+</tr>
+<tr>
+<td><code>kill</code></td>
+<td>Efeito visual</td>
+<td>Remove dado com partículas</td>
+<td>-</td>
+<td>Efeito de destruição ao desaparecer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fluxo-de-jogo">Fluxo de Jogo<a class="headerlink" href="#fluxo-de-jogo" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Rolagem Inicial</strong>:</p>
+<ul>
+<li>Dados físicos são rolados na cena 3D</li>
+<li>Sistema detecta quando dados param de se mover</li>
+<li>Valores são calculados baseados na face superior</li>
+</ul>
+</li>
+<li>
+<p><strong>Seleção de Dados</strong>:</p>
+<ul>
+<li>Jogador seleciona até 5 dados</li>
+<li>Botões são ativados/desativados conforme seleção</li>
+<li>Efeitos sonoros acompanham interações</li>
+</ul>
+</li>
+<li>
+<p><strong>Ações Disponíveis</strong>:</p>
+<ul>
+<li><strong>Jogar</strong>: Confirma seleção atual</li>
+<li><strong>Rerolar</strong>: Substitui dados selecionados (limitado)</li>
+</ul>
+</li>
+</ol>
+<h2 id="especificacoes-tecnicas">Especificações Técnicas<a class="headerlink" href="#especificacoes-tecnicas" title="Permanent link">&para;</a></h2>
+<h3 id="dice-slots">Dice Slots<a class="headerlink" href="#dice-slots" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Capacidade máxima: 7 dados visíveis</li>
+<li>Requisito para jogar: 5 dados selecionados</li>
+<li>Controles:<ul>
+<li><code>play_button</code>: Só ativo com 5 dados</li>
+<li><code>reroll_button</code>: Ativo com seleção e rerolls disponíveis</li>
+</ul>
+</li>
+</ul>
+<h3 id="die-dado-3d">Die (Dado 3D)<a class="headerlink" href="#die-dado-3d" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Física realista com rotação aleatória inicial</li>
+<li>Sistema de detecção:<ul>
+<li>Usa Raycasts para determinar face superior</li>
+<li>Valor calculado como <code>7 - face_inferior</code></li>
+</ul>
+</li>
+<li>Efeitos:<ul>
+<li>Partículas de destruição ao remover</li>
+<li>Sons de interação</li>
+</ul>
+</li>
+</ul>
+<h2 id="balanceamento-e-regras">Balanceamento e Regras<a class="headerlink" href="#balanceamento-e-regras" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Limites</strong>:</p>
+<ul>
+<li>Máximo 7 dados na área de seleção</li>
+<li>Necessário selecionar exatamente 5 para jogar</li>
+</ul>
+</li>
+<li>
+<p><strong>Rerolls</strong>:</p>
+<ul>
+<li>Quantidade controlada pelo sistema pai</li>
+<li>Só disponível para dados selecionados</li>
+</ul>
+</li>
+<li>
+<p><strong>Física</strong>:</p>
+<ul>
+<li>Dados recebem rotação aleatória inicial</li>
+<li>Devem estar completamente parados para registro do valor</li>
+</ul>
+</li>
+</ol>
+<h2 id="proximos-passos">Próximos Passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Novos Tipos de Dados</strong>:</p>
+<ul>
+<li>Dados com mais números de lados</li>
+<li>Dados bônus com efeitos únicos</li>
+</ul>
+</li>
+<li>
+<p><strong>Modificadores Visuais</strong>:</p>
+<ul>
+<li>Destaque para dados selecionados</li>
+<li>Animação ao confirmar seleção</li>
+</ul>
+</li>
+<li>
+<p><strong>Sistema de Combinação</strong>:</p>
+<ul>
+<li>Bônus por combinar certos tipos de dados (cores de dados)</li>
+<li>Efeitos especiais para combinações raras</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

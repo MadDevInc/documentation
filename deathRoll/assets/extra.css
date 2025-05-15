@@ -1,0 +1,65 @@
+:root {
+  --md-primary-fg-color: #000000;
+  --md-primary-fg-color--light: #333333;
+  --md-primary-fg-color--dark: #000000;
+  --md-accent-fg-color: #ff0000;
+  --md-typeset-a-color: #ff0000;
+}
+
+.md-header {
+  background-color: #000000;
+  border-bottom: 2px solid #ff0000;
+}
+
+.md-tabs {
+  background-color: #000000;
+}
+
+.md-tabs__link--active {
+  color: #ff0000;
+  border-bottom: 2px solid #ff0000;
+}
+
+.md-nav__link--active {
+  color: #ff0000;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: #ff0000;
+  border-bottom: 1px solid #ff0000;
+  padding-bottom: 0.3em;
+}
+
+.md-typeset a:hover {
+  color: #cc0000;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #ff0000;
+  color: #000000;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.md-footer {
+  background-color: #000000;
+  border-top: 2px solid #ff0000;
+}
+
+.md-search__input {
+  background-color: #1a1a1a;
+}
+
+.md-typeset .admonition {
+  border-left: 4px solid #ff0000;
+}
+
+.md-typeset
+  .task-list-item
+  [type="checkbox"]:checked
+  + .task-list-indicator::before {
+  background-color: #ff0000;
+}

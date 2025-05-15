@@ -1,0 +1,1527 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../dice/">
+      
+      
+        <link rel="next" href="../narrativo/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>Interface de Usuário - MadDev - Documentação dos Projetos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gothic:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Gothic";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../docs/deathRoll/assets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#elementos-de-ui" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MadDev - Documentação dos Projetos" class="md-header__button md-logo" aria-label="MadDev - Documentação dos Projetos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MadDev - Documentação dos Projetos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Interface de Usuário
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Death Roll
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../steveIsAlone/" class="md-tabs__link">
+        
+  
+    
+  
+  Steve is Alone
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../fragmento/" class="md-tabs__link">
+        
+  
+    
+  
+  Fragmento
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MadDev - Documentação dos Projetos" class="md-nav__button md-logo" aria-label="MadDev - Documentação dos Projetos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MadDev - Documentação dos Projetos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Death Roll
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Death Roll
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/art/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/gameplay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mecânicas de Jogo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/narrative/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Narrativa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/marketing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gdd/technical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Técnico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Design
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9_1" id="__nav_2_9_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sistema de Cartas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            Sistema de Cartas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cards/deck/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deck Completo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cards/cards_player/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cartas do Jogador
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cards/cards_enemy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cartas do Inimigo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sistema de Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Interface de Usuário
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Interface de Usuário
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral do Sistema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visão Geral do Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#componentes-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes Principais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabela-de-componentes-de-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Componentes de UI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhes-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detalhes de Implementação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhes de Implementação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-transicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema de Transição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contador-de-pontos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contador de Pontos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-rerolls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema de Rerolls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#botao-interativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Botão Interativo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-de-interacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fluxo de Interação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximos Passos:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../narrativo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Narrativo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Desenvolvimento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Desenvolvimento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev-log/milestones/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dev Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Gerenciamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            Gerenciamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/sprints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Equipe
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            Equipe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/team/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Membros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../steveIsAlone/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Steve is Alone
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fragmento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fragmento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="elementos-de-ui">Elementos de UI<a class="headerlink" href="#elementos-de-ui" title="Permanent link">&para;</a></h1>
+<h2 id="visao-geral-do-sistema">Visão Geral do Sistema<a class="headerlink" href="#visao-geral-do-sistema" title="Permanent link">&para;</a></h2>
+<h3 id="componentes-principais">Componentes Principais<a class="headerlink" href="#componentes-principais" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Sistema de Transição</strong> (<code>transition.gd</code>)</li>
+<li><strong>Contador de Pontuação</strong> (<code>score_counter.gd</code>)</li>
+<li><strong>Gerenciador de Rerolls</strong> (<code>reroll_count.gd</code> e <code>reroll_icon.gd</code>)</li>
+<li><strong>Efeitos Visuais</strong> (<code>die_kill.gd</code>)</li>
+<li><strong>Botões Interativos</strong> (<code>Button.gd</code>)</li>
+</ol>
+<h2 id="tabela-de-componentes-de-ui">Tabela de Componentes de UI<a class="headerlink" href="#tabela-de-componentes-de-ui" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Arquivo</th>
+<th>Função Principal</th>
+<th>Propriedades</th>
+<th>Comportamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transição entre Cenas</td>
+<td><code>transition.gd</code></td>
+<td>Gerencia mudanças de fase</td>
+<td>- <code>Global.stage</code></td>
+<td>Reproduz animação específica por fase</td>
+</tr>
+<tr>
+<td>Contador de Pontos</td>
+<td><code>score_counter.gd</code></td>
+<td>Controla progresso do jogador</td>
+<td>- <code>max_points</code> (exportado)</td>
+<td>Emite sinal de vitória ao completar</td>
+</tr>
+<tr>
+<td>Ícone de Reroll</td>
+<td><code>reroll_icon.gd</code></td>
+<td>Representa uma reroll disponível</td>
+<td>-</td>
+<td>Animação ao ser consumido</td>
+</tr>
+<tr>
+<td>Gerenciador de Rerolls</td>
+<td><code>reroll_count.gd</code></td>
+<td>Controla rerolls disponíveis</td>
+<td>- <code>max_rerolls</code></td>
+<td>Adiciona/remove ícones visualmente</td>
+</tr>
+<tr>
+<td>Efeito de Dado Destruído</td>
+<td><code>die_kill.gd</code></td>
+<td>Feedback visual para remoção de dados</td>
+<td>- <code>initial_position</code></td>
+<td>Partículas e efeito sonoro</td>
+</tr>
+<tr>
+<td>Botão Genérico</td>
+<td><code>Button.gd</code></td>
+<td>Base para interações</td>
+<td>- <code>normal</code>/<code>pressed</code> (texturas)</td>
+<td>Muda estado visual ao interagir</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detalhes-de-implementacao">Detalhes de Implementação<a class="headerlink" href="#detalhes-de-implementacao" title="Permanent link">&para;</a></h2>
+<h3 id="sistema-de-transicao">Sistema de Transição<a class="headerlink" href="#sistema-de-transicao" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">Global</span><span class="o">.</span><span class="n">stage</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">animation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;goto&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">str</span><span class="p">(</span><span class="n">Global</span><span class="o">.</span><span class="n">stage</span><span class="p">)</span>
+<span class="w">    </span><span class="n">anims</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">animation</span><span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li>Incrementa fase global automaticamente</li>
+<li>Carrega animação específica para cada fase (ex: "goto1", "goto2")</li>
+<li>Mudança de cena ocorre ao final da animação "outro"</li>
+</ul>
+<h3 id="contador-de-pontos">Contador de Pontos<a class="headerlink" href="#contador-de-pontos" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Inicializa com ícones vazios</li>
+<li><code>add_point()</code> preenche ícones sequencialmente</li>
+<li>Ao atingir <code>max_points</code>, emite sinal de vitória</li>
+</ol>
+<h3 id="sistema-de-rerolls">Sistema de Rerolls<a class="headerlink" href="#sistema-de-rerolls" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Ação</th>
+<th>Método</th>
+<th>Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Consumir reroll</td>
+<td><code>spend_reroll()</code></td>
+<td>Executa animação e remove ícone</td>
+</tr>
+<tr>
+<td>Verificar disponibilidade</td>
+<td><code>rerolls_left()</code></td>
+<td>Retorna quantidade restante</td>
+</tr>
+<tr>
+<td>Adicionar reroll</td>
+<td><code>add_reroll()</code></td>
+<td>Instancia novo ícone</td>
+</tr>
+</tbody>
+</table>
+<h3 id="botao-interativo">Botão Interativo<a class="headerlink" href="#botao-interativo" title="Permanent link">&para;</a></h3>
+<p><strong>Estados:</strong></p>
+<ul>
+<li><code>active=true</code>: Totalmente visível, interativo</li>
+<li><code>active=false</code>: Semitransparente, não interativo</li>
+</ul>
+<p><strong>Comportamento:</strong></p>
+<ul>
+<li>Muda textura quando pressionado</li>
+<li>Emite sinal <code>button_pressed</code> apenas quando ativo</li>
+</ul>
+<h2 id="fluxo-de-interacao">Fluxo de Interação<a class="headerlink" href="#fluxo-de-interacao" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Progressão de Fase</strong>:</p>
+<ul>
+<li>Animação de transição inicia automaticamente</li>
+<li>Ao final, carrega nova cena de jogo</li>
+</ul>
+</li>
+<li>
+<p><strong>Pontuação</strong>:</p>
+<ul>
+<li>Cada ponto adicionado dispara animação "pop"</li>
+<li>Vitória é automaticamente detectada</li>
+</ul>
+</li>
+<li>
+<p><strong>Rerolls</strong>:</p>
+<ul>
+<li>Ícones são consumidos da direita para esquerda</li>
+<li>Cada consumo toca animação antes de desaparecer</li>
+</ul>
+</li>
+<li>
+<p><strong>Feedback Visual</strong>:</p>
+<ul>
+<li>Dados destruídos emitem partículas vermelhas/pretas</li>
+<li>Efeito sonoro acompanha a destruição</li>
+</ul>
+</li>
+</ol>
+<h2 id="proximos-passos">Próximos Passos:<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Melhorias Visuais</strong>:</p>
+<ul>
+<li>Animação de preenchimento progressivo para pontos</li>
+<li>Efeito de pulsação para rerolls disponíveis</li>
+<li>Transições personalizadas por tipo de fase</li>
+</ul>
+</li>
+<li>
+<p><strong>Novos Componentes</strong>:</p>
+<ul>
+<li>Notificações flutuantes para eventos importantes</li>
+<li>Menu contextual com informações de jogo</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
