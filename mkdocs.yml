@@ -48,6 +48,8 @@ nav:
   - Death Roll:
       - Home: deathRoll/index.md
       - Visão Geral: deathRoll/gdd/overview.md
+      - Projeto:
+          - Backlog: deathRoll/projeto/backlog.md
       - Arte: deathRoll/gdd/art.md
       - Mecânicas de Jogo: deathRoll/gdd/gameplay.md
       - Narrativa: deathRoll/gdd/narrative.md
@@ -60,9 +62,7 @@ nav:
               - Cartas do Inimigo: deathRoll/design/cards/cards_enemy.md
           - Sistema de Dados: deathRoll/design/dice.md
           - Interface de Usuário: deathRoll/design/ui.md
-          - Game: deathRoll/design/game.md
           - Narrativo: deathRoll/design/narrativo.md
-
       - Desenvolvimento:
           - Dev Log: deathRoll/dev-log/milestones.md
       - Gerenciamento:
