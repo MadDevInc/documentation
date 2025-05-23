@@ -573,27 +573,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#historias-de-usuario-us" class="md-nav__link">
+  <a href="#backlog-priorizado-wip" class="md-nav__link">
     <span class="md-ellipsis">
-      Histórias de Usuário (US)
+      Backlog Priorizado (WIP)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#historias-de-usuario-priorizadas" class="md-nav__link">
+  <a href="#priorizacao-dos-itens-do-backlog" class="md-nav__link">
     <span class="md-ellipsis">
-      Histórias de Usuário Priorizadas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backlog-priorizado" class="md-nav__link">
-    <span class="md-ellipsis">
-      Backlog Priorizado
+      Priorização dos Itens do Backlog
     </span>
   </a>
   
@@ -1347,7 +1338,9 @@
 
 
 <h1 id="backlog-death-roll">Backlog - Death Roll<a class="headerlink" href="#backlog-death-roll" title="Permanent link">&para;</a></h1>
+<p>O Backlog de Requisitos do projeto é concebido como um documento vivo, passível de atualização conforme a evolução do desenvolvimento. Seu principal objetivo é orientar toda a equipe na direção da meta estabelecida, assegurando a entrega de valor máximo ao jogo.</p>
 <h2 id="estrutura-do-backlog">Estrutura do Backlog<a class="headerlink" href="#estrutura-do-backlog" title="Permanent link">&para;</a></h2>
+<p>Os requisitos estão organizados em uma hierarquia estruturada da seguinte forma:</p>
 <table>
 <thead>
 <tr>
@@ -1383,14 +1376,24 @@
 <td>Use histórias de usuário para entender as necessidades do jogador e priorizar funcionalidades que entreguem valor.</td>
 </tr>
 <tr>
-<td><a href=""><strong>Histórico de Revisões</strong></a></td>
+<td><a href="#arte-conceito-ac"><strong>Arte Conceito (AC)</strong></a></td>
+<td>Detalha os contextos visuais do jogo, como ambiente, cenários, criaturas, interfaces, etc.</td>
+<td>Utilize para definir o estilo e direção artística, servindo como referência para a equipe de arte.</td>
+</tr>
+<tr>
+<td><a href="#requisitos-de-audio-ra"><strong>Requisitos de Áudio (RA)</strong></a></td>
+<td>Especifica as necessidades técnicas e criativas da sonorização do jogo, incluindo trilha, efeitos e integração com a gameplay.</td>
+<td>Documente os requisitos para garantir que o áudio esteja alinhado com a experiência desejada do jogo.</td>
+</tr>
+<tr>
+<td><a href="#histórico-de-revisões"><strong>Histórico de Revisões</strong></a></td>
 <td>Registra as alterações feitas no backlog, incluindo a data, o autor e uma breve descrição das mudanças.</td>
 <td>Consulte o histórico para acompanhar a evolução do backlog e manter a rastreabilidade.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="temas-tm">Temas (TM)<a class="headerlink" href="#temas-tm" title="Permanent link">&para;</a></h2>
-<p>Os temas representam as áreas principais do desenvolvimento do jogo.</p>
+<p>Os temas representam as áreas centrais do desenvolvimento do jogo.</p>
 <table>
 <thead>
 <tr>
@@ -1429,86 +1432,86 @@
 </table>
 <hr />
 <h2 id="epicos-ep">Épicos (EP)<a class="headerlink" href="#epicos-ep" title="Permanent link">&para;</a></h2>
-<p>Os épicos são grandes blocos de trabalho dentro de cada tema.</p>
+<p>São grandes blocos de trabalho dentro de cada tema.</p>
 <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Tema</th>
+<th>ID</th>
 <th>Nome</th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>EP01</td>
 <td>Arte e Design</td>
+<td>EP01</td>
 <td>Criação de Cenários</td>
 <td>Desenvolvimento de 9 cenários distintos para o jogo.</td>
 </tr>
 <tr>
-<td>EP02</td>
 <td>Arte e Design</td>
+<td>EP02</td>
 <td>Criação de Personagens</td>
 <td>Modelagem de inimigos, NPCs e outros elementos visuais.</td>
 </tr>
 <tr>
-<td>EP03</td>
 <td>Arte e Design</td>
+<td>EP03</td>
 <td>Design de Itens</td>
 <td>Criação de dados, cartas, baús e outros objetos.</td>
 </tr>
 <tr>
-<td>EP04</td>
 <td>Jogabilidade</td>
+<td>EP04</td>
 <td>Combate</td>
 <td>Desenvolvimento de mecânicas de combate baseadas em dados e cartas.</td>
 </tr>
 <tr>
-<td>EP05</td>
 <td>Jogabilidade</td>
+<td>EP05</td>
 <td>Eventos Aleatórios</td>
 <td>Implementação de Eventos Aleatórios</td>
 </tr>
 <tr>
-<td>EP06</td>
 <td>Jogabilidade</td>
+<td>EP06</td>
 <td>Sistema de Trilha</td>
 <td>Criação de mecânicas de progressão de níveis com escolha de caminhos aleatóriamente gerados.</td>
 </tr>
 <tr>
-<td>EP07</td>
 <td>Jogabilidade</td>
+<td>EP07</td>
 <td>Loja</td>
 <td>Criação de uma loja para compra de cartas</td>
 </tr>
 <tr>
-<td>EP08</td>
 <td>Interface do Usuário</td>
+<td>EP08</td>
 <td>Menus de Navegação</td>
 <td>Criação de menus para loja, deck, dados, pausa e diálogo.</td>
 </tr>
 <tr>
-<td>EP09</td>
 <td>Interface do Usuário</td>
+<td>EP09</td>
 <td>HUD e Feedback Visual</td>
 <td>Desenvolvimento de elementos visuais para exibir informações ao jogador.</td>
 </tr>
 <tr>
-<td>EP10</td>
 <td>Áudio e Trilha Sonora</td>
+<td>EP10</td>
 <td>Composição de Músicas</td>
 <td>Criação de trilhas sonoras temáticas para cada círculo do Inferno.</td>
 </tr>
 <tr>
-<td>EP11</td>
 <td>Áudio e Trilha Sonora</td>
+<td>EP11</td>
 <td>Efeitos Sonoros</td>
 <td>Desenvolvimento de sons para ações e ambientação.</td>
 </tr>
 <tr>
-<td>EP12</td>
 <td>Narrativa e Mundo</td>
+<td>EP12</td>
 <td>Diálogos</td>
 <td>Criação dos diálogos do jogo.</td>
 </tr>
@@ -1516,2369 +1519,414 @@
 </table>
 <hr />
 <h2 id="capacidades-c">Capacidades (C)<a class="headerlink" href="#capacidades-c" title="Permanent link">&para;</a></h2>
-<p>As capacidades detalham os objetivos específicos de cada épico.</p>
+<p>Capacidades descrevem objetivos específicos vinculados a cada épico.</p>
 <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Épico</th>
+<th>ID</th>
 <th>Capacidade</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>C01</td>
 <td>EP01 - Criação de Cenários</td>
+<td>C01</td>
 <td>Criar cenários únicos para cada círculo do Inferno</td>
 </tr>
 <tr>
-<td>C02</td>
 <td>EP01 - Criação de Cenários</td>
+<td>C02</td>
 <td>Otimizar performance visual dos cenários</td>
 </tr>
 <tr>
-<td>C03</td>
 <td>EP02 - Criação de Personagens</td>
+<td>C03</td>
 <td>Criar modelos 2D para NPCs e inimigos</td>
 </tr>
 <tr>
-<td>C04</td>
 <td>EP02 - Criação de Personagens</td>
+<td>C04</td>
 <td>Integrar personagens com sistema de combate</td>
 </tr>
 <tr>
-<td>C05</td>
 <td>EP03 - Design de Itens</td>
+<td>C05</td>
 <td>Criar visuais distintos para cada item</td>
 </tr>
 <tr>
-<td>C06</td>
 <td>EP03 - Design de Itens</td>
+<td>C06</td>
 <td>Integrar itens com sistema de menu (saco de dados e deck)</td>
 </tr>
 <tr>
-<td>C07</td>
 <td>EP04 - Combate</td>
+<td>C07</td>
 <td>Implementar sistema de lançamento de dados</td>
 </tr>
 <tr>
-<td>C08</td>
 <td>EP04 - Combate</td>
+<td>C08</td>
 <td>Implementar o sistema das cartas</td>
 </tr>
 <tr>
-<td>C09</td>
 <td>EP05 - Eventos Aleatórios</td>
+<td>C09</td>
 <td>Gerar eventos com consequências variadas</td>
 </tr>
 <tr>
-<td>C10</td>
 <td>EP05 - Eventos Aleatórios</td>
+<td>C10</td>
 <td>Integrar eventos aleatórios ao fluxo de gameplay</td>
 </tr>
 <tr>
-<td>C11</td>
 <td>EP06 - Sistema de Trilha</td>
+<td>C11</td>
 <td>Gerar caminhos de progressão aleatórios entre níveis</td>
 </tr>
 <tr>
-<td>C12</td>
 <td>EP06 - Sistema de Trilha</td>
+<td>C12</td>
 <td>Exibir mapa da trilha com opções de escolha visíveis ao jogador</td>
 </tr>
 <tr>
-<td>C13</td>
 <td>EP07 - Loja</td>
+<td>C13</td>
 <td>Implementar interface de compra de cartas</td>
 </tr>
 <tr>
-<td>C14</td>
 <td>EP07 - Loja</td>
+<td>C14</td>
 <td>Programar sistema de moedas e economia</td>
 </tr>
 <tr>
-<td>C15</td>
 <td>EP08 - Menus de Navegação</td>
+<td>C15</td>
 <td>Criar estrutura de menus</td>
 </tr>
 <tr>
-<td>C16</td>
 <td>EP08 - Menus de Navegação</td>
+<td>C16</td>
 <td>Implementar transições visuais entre menus</td>
 </tr>
 <tr>
-<td>C17</td>
 <td>EP09 - HUD e Feedback Visual</td>
+<td>C17</td>
 <td>Mostrar informações de combate e status do jogador</td>
 </tr>
 <tr>
-<td>C18</td>
 <td>EP09 - HUD e Feedback Visual</td>
+<td>C18</td>
 <td>Exibir efeitos visuais em ações como dano ou combo</td>
 </tr>
 <tr>
-<td>C19</td>
 <td>EP10 - Composição de Músicas</td>
+<td>C19</td>
 <td>Criar trilhas sonoras adaptadas a cada círculo do Inferno</td>
 </tr>
 <tr>
-<td>C20</td>
 <td>EP10 - Composição de Músicas</td>
+<td>C20</td>
 <td>Implementar variações dinâmicas na música conforme ações do jogador</td>
 </tr>
 <tr>
-<td>C21</td>
 <td>EP11 - Efeitos Sonoros</td>
+<td>C21</td>
 <td>Adicionar sons para interações, menus e ações de combate</td>
 </tr>
 <tr>
-<td>C22</td>
 <td>EP11 - Efeitos Sonoros</td>
+<td>C22</td>
 <td>Integrar efeitos sonoros com sistema de animação</td>
 </tr>
 <tr>
-<td>C27</td>
 <td>EP14 - Diálogos</td>
+<td>C27</td>
 <td>Escrever os diálogos do jogo</td>
 </tr>
 <tr>
-<td>C28</td>
 <td>EP14 - Diálogos</td>
+<td>C28</td>
 <td>Implementar sistema de taunt de elites e boss para o jogador</td>
 </tr>
 <tr>
-<td>C29</td>
 <td>EP03 - Design de Itens</td>
+<td>C29</td>
 <td>Integrar o sistema de artefatos</td>
 </tr>
 </tbody>
 </table>
 <h2 id="funcionalidades-f">Funcionalidades (F)<a class="headerlink" href="#funcionalidades-f" title="Permanent link">&para;</a></h2>
-<p>As funcionalidades são tarefas específicas que implementam as capacidades.</p>
+<p>As funcionalidades são tarefas técnicas concretas que implementam as capacidades.</p>
 <table>
 <thead>
 <tr>
+<th>Capacidade ()</th>
 <th>ID</th>
-<th>Capacidade (ID + Nome)</th>
 <th>Funcionalidade</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>F01</td>
 <td>C01 - Criar cenários únicos para cada círculo do Inferno</td>
+<td>F01</td>
 <td>Criar um fundo temático para cada círculo</td>
 </tr>
 <tr>
-<td>F02</td>
 <td>C01 - Criar cenários únicos para cada círculo do Inferno</td>
+<td>F02</td>
 <td>Integrar o cenário com objetos temáticos do círculo</td>
 </tr>
 <tr>
-<td>F03</td>
 <td>C02 - Otimizar performance visual dos cenários</td>
+<td>F03</td>
 <td>Definir aspectos técnicos referentes à performance</td>
 </tr>
 <tr>
-<td>F04</td>
 <td>C02 - Otimizar performance visual dos cenários</td>
+<td>F04</td>
 <td>Usar instâncias reutilizáveis para objetos do cenário</td>
 </tr>
 <tr>
-<td>F05</td>
 <td>C03 - Criar modelos 2D para NPCs e inimigos</td>
+<td>F05</td>
 <td>Criar os sprites para os inimigos</td>
 </tr>
 <tr>
-<td>F06</td>
 <td>C03 - Criar modelos 2D para NPCs e inimigos</td>
+<td>F06</td>
 <td>Criar os sprites para os NPCs</td>
 </tr>
 <tr>
-<td>F07</td>
 <td>C04 - Integrar personagens com sistema de combate</td>
+<td>F07</td>
 <td>Integrar eventos de animação com sistema de combate</td>
 </tr>
 <tr>
-<td>F08</td>
 <td>C05 - Criar visuais distintos para cada item</td>
+<td>F08</td>
 <td>Designar ícones únicos para cada tipo de carta e dado</td>
 </tr>
 <tr>
-<td>F09</td>
 <td>C05 - Criar visuais distintos para cada item</td>
+<td>F09</td>
 <td>Criar animações de aquisição e uso visual de cada item</td>
 </tr>
 <tr>
-<td>F10</td>
 <td>C06 - Integrar itens com sistema de menu (saco de dados e deck)</td>
+<td>F10</td>
 <td>Exibir dados coletados e regras do jogo no menu do "saco de dados"</td>
 </tr>
 <tr>
-<td>F11</td>
 <td>C06 - Integrar itens com sistema de menu (saco de dados e deck)</td>
+<td>F11</td>
 <td>Implementar sistema de arrastar e soltar cartas no menu de deck</td>
 </tr>
 <tr>
-<td>F12</td>
 <td>C07 - Implementar sistema de lançamento de dados</td>
+<td>F12</td>
 <td>Criar sistema de lançamento de dados com animação visual</td>
 </tr>
 <tr>
-<td>F13</td>
 <td>C07 - Implementar sistema de lançamento de dados</td>
+<td>F13</td>
 <td>Pegar o valor atual do dado no 3D e exibir resultado em HUD</td>
 </tr>
 <tr>
-<td>F14</td>
 <td>C08 - Implementar o sistema das cartas</td>
+<td>F14</td>
 <td>Implementar sistema de combos a partir das cartas</td>
 </tr>
 <tr>
-<td>F15</td>
 <td>C08 - Implementar o sistema das cartas</td>
+<td>F15</td>
 <td>Aplicar efeitos específicos das cartas no inimigo ou jogador</td>
 </tr>
 <tr>
-<td>F16</td>
 <td>C09 - Gerar eventos com consequências variadas</td>
+<td>F16</td>
 <td>Criar tabela de eventos com tipos: positivos, negativos e neutros</td>
 </tr>
 <tr>
-<td>F17</td>
 <td>C09 - Gerar eventos com consequências variadas</td>
+<td>F17</td>
 <td>Escrever descrições e consequências únicas para cada evento</td>
 </tr>
 <tr>
-<td>F18</td>
 <td>C10 - Integrar eventos aleatórios ao fluxo de gameplay</td>
+<td>F18</td>
 <td>Definir pontos de ativação para eventos aleatórios no mapa</td>
 </tr>
 <tr>
-<td>F19</td>
 <td>C10 - Integrar eventos aleatórios ao fluxo de gameplay</td>
+<td>F19</td>
 <td>Integrar eventos aleatórios como interrupções no fluxo principal</td>
 </tr>
 <tr>
-<td>F20</td>
 <td>C11 - Gerar caminhos de progressão aleatórios entre níveis</td>
+<td>F20</td>
 <td>Gerar caminhos aleatórios conectando cenários com regras de progressão</td>
 </tr>
 <tr>
-<td>F21</td>
 <td>C11 - Gerar caminhos de progressão aleatórios entre níveis</td>
+<td>F21</td>
 <td>Definir pesos e condições para gerar as bifurcações</td>
 </tr>
 <tr>
-<td>F22</td>
 <td>C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador</td>
+<td>F22</td>
 <td>Criar mapa da trilha com visualização dos caminhos possíveis</td>
 </tr>
 <tr>
-<td>F23</td>
 <td>C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador</td>
+<td>F23</td>
 <td>Permitir seleção de caminho com botão de confirmação</td>
 </tr>
 <tr>
-<td>F24</td>
 <td>C13 - Implementar interface de compra de cartas</td>
+<td>F24</td>
 <td>Exibir loja com seções de cartas disponíveis, raridade e custo</td>
 </tr>
 <tr>
-<td>F25</td>
 <td>C13 - Implementar interface de compra de cartas</td>
+<td>F25</td>
 <td>Criar pop-up de confirmação de compra com descrição da carta</td>
 </tr>
 <tr>
-<td>F26</td>
 <td>C14 - Programar sistema de moedas e economia</td>
+<td>F26</td>
 <td>Implementar sistema de moeda obtida em batalhas ou eventos</td>
 </tr>
 <tr>
-<td>F27</td>
 <td>C14 - Programar sistema de moedas e economia</td>
+<td>F27</td>
 <td>Exibir saldo do jogador na interface da loja</td>
 </tr>
 <tr>
-<td>F28</td>
 <td>C15 - Criar estrutura de menus</td>
+<td>F28</td>
 <td>Criar menus para: Jogo, Loja, Deck, Dados, Pausa, Configurações, Créditos</td>
 </tr>
 <tr>
-<td>F29</td>
 <td>C15 - Criar estrutura de menus</td>
+<td>F29</td>
 <td>Programar navegação entre menus por teclado, mouse e controle</td>
 </tr>
 <tr>
-<td>F30</td>
 <td>C16 - Implementar transições visuais entre menus</td>
+<td>F30</td>
 <td>Adicionar transições animadas entre menus</td>
 </tr>
 <tr>
-<td>F31</td>
 <td>C16 - Implementar transições visuais entre menus</td>
+<td>F31</td>
 <td>Implementar sons de menu sincronizados com animações</td>
 </tr>
 <tr>
-<td>F32</td>
 <td>C17 - Mostrar informações de combate e status do jogador</td>
+<td>F32</td>
 <td>Exibir status do jogador (vida, cartas, dados) durante o combate</td>
 </tr>
 <tr>
-<td>F33</td>
 <td>C17 - Mostrar informações de combate e status do jogador</td>
+<td>F33</td>
 <td>Exibir informações do inimigo</td>
 </tr>
 <tr>
-<td>F34</td>
 <td>C18 - Exibir efeitos visuais em ações como dano ou combo</td>
+<td>F34</td>
 <td>Criar efeitos visuais de danos e combos</td>
 </tr>
 <tr>
-<td>F35</td>
 <td>C18 - Exibir efeitos visuais em ações como dano ou combo</td>
+<td>F35</td>
 <td>Criar efeitos visuais de interação com objetos</td>
 </tr>
 <tr>
-<td>F36</td>
 <td>C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno</td>
+<td>F36</td>
 <td>Compor trilhas sonoras únicas para cada círculo com base em ambientação</td>
 </tr>
 <tr>
-<td>F37</td>
 <td>C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno</td>
+<td>F37</td>
 <td>Mixar músicas em camadas (base, combate, tensão) para cada cenário</td>
 </tr>
 <tr>
-<td>F38</td>
 <td>C20 - Implementar variações dinâmicas na música conforme ações do jogador</td>
+<td>F38</td>
 <td>Mudar a intensidade da trilha com base na ação do jogador (ex: combate)</td>
 </tr>
 <tr>
-<td>F39</td>
 <td>C20 - Implementar variações dinâmicas na música conforme ações do jogador</td>
+<td>F39</td>
 <td>Adicionar transições suaves entre trilhas com base em gatilhos do jogo</td>
 </tr>
 <tr>
-<td>F40</td>
 <td>C21 - Adicionar sons para interações, menus e ações de combate</td>
+<td>F40</td>
 <td>Criar sons para interações e menus</td>
 </tr>
 <tr>
-<td>F41</td>
 <td>C21 - Adicionar sons para interações, menus e ações de combate</td>
+<td>F41</td>
 <td>Adicionar sons únicos para usos de carta e efeitos de combo</td>
 </tr>
 <tr>
-<td>F42</td>
 <td>C22 - Integrar efeitos sonoros com sistema de animação</td>
+<td>F42</td>
 <td>Integrar sons com animações de ataque e interação</td>
 </tr>
 <tr>
-<td>F43</td>
 <td>C22 - Integrar efeitos sonoros com sistema de animação</td>
+<td>F43</td>
 <td>Integrar sons dos NPCs</td>
 </tr>
 <tr>
-<td>F44</td>
 <td>C27 - Escrever os diálogos do jogo</td>
+<td>F44</td>
 <td>Escrever diálogos ramificados para personagens importantes</td>
 </tr>
 <tr>
-<td>F45</td>
 <td>C27 - Escrever os diálogos do jogo</td>
+<td>F45</td>
 <td>Organizar sistema de diálogo em planilha</td>
 </tr>
 <tr>
-<td>F46</td>
 <td>C28 - Implementar sistema de taunt de elites e boss para o jogador</td>
+<td>F46</td>
 <td>Criar falas provocativas para elites e chefes com base no combate</td>
 </tr>
 <tr>
-<td>F47</td>
 <td>C28 - Implementar sistema de taunt de elites e boss para o jogador</td>
+<td>F47</td>
 <td>Integrar sistema de taunts com entrada de combate do jogador</td>
 </tr>
 <tr>
-<td>F48</td>
 <td>C29 - Integrar o sistema de artefatos</td>
+<td>F48</td>
 <td>Criar o menu de artefatos</td>
 </tr>
 <tr>
-<td>F49</td>
 <td>C29 - Integrar o sistema de artefatos</td>
+<td>F49</td>
 <td>Desbloquear os artefatos como colecionáveis</td>
 </tr>
 </tbody>
 </table>
+<h2 id="backlog-priorizado-wip">Backlog Priorizado (WIP)<a class="headerlink" href="#backlog-priorizado-wip" title="Permanent link">&para;</a></h2>
+<p>Work In Progress</p>
+<h2 id="priorizacao-dos-itens-do-backlog">Priorização dos Itens do Backlog<a class="headerlink" href="#priorizacao-dos-itens-do-backlog" title="Permanent link">&para;</a></h2>
+<p>A priorização dos itens do backlog foi baseada nos requisitos considerados mais relevantes. Os critérios utilizados foram:</p>
+<ul>
+<li><strong>Maior Importância</strong></li>
+<li><strong>Menor Esforço</strong></li>
+<li><strong>Menor Risco</strong></li>
+</ul>
+<p>Para determinar a prioridade de cada item, utilizou-se a seguinte fórmula:</p>
+<p><strong>Prioridade = Importância / (Esforço + Risco)</strong></p>
+<p>Essa abordagem visa maximizar a entrega de valor, priorizando tarefas rápidas e impactantes. Com isso, buscamos garantir um progresso ágil e eficiente ao longo do desenvolvimento do jogo.</p>
 <hr />
-<h2 id="historias-de-usuario-us">Histórias de Usuário (US)<a class="headerlink" href="#historias-de-usuario-us" title="Permanent link">&para;</a></h2>
-<p>As histórias de usuário detalham as interações do jogador com o sistema.</p>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Funcionalidade (ID + Nome)</th>
-<th>História de Usuário (US)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>US01</td>
-<td>F01 - Criar um fundo temático para cada círculo</td>
-<td>Como jogador, quero visualizar cenários únicos em cada círculo do Inferno para imersão na ambientação.</td>
-</tr>
-<tr>
-<td>US02</td>
-<td>F01 - Criar um fundo temático para cada círculo</td>
-<td>Como artista, quero criar assets visuais distintos para cada círculo que reflitam suas características temáticas.</td>
-</tr>
-<tr>
-<td>US03</td>
-<td>F02 - Integrar cenário com objetos temáticos</td>
-<td>Como jogador, quero visualizar objetos ambientais que complementem a narrativa de cada círculo.</td>
-</tr>
-<tr>
-<td>US04</td>
-<td>F02 - Integrar cenário com objetos temáticos</td>
-<td>Como artista, quero criar entidades para o cenário com interações consistentes com a jogabilidade.</td>
-</tr>
-<tr>
-<td>US05</td>
-<td>F03 - Definir aspectos técnicos de performance</td>
-<td>Como desenvolvedor, quero otimizar polígonos e texturas para manter uma taxa estável de FPS</td>
-</tr>
-<tr>
-<td>US06</td>
-<td>F03 - Definir aspectos técnicos de performance</td>
-<td>Como jogador, quero uma experiência fluida sem travamentos durante transições de cenário.</td>
-</tr>
-<tr>
-<td>US07</td>
-<td>F04 - Usar instâncias reutilizáveis</td>
-<td>Como desenvolvedor, quero reutilizar assets de cenário com variações para reduzir carga de memória.</td>
-</tr>
-<tr>
-<td>US08</td>
-<td>F05 - Criar sprites para inimigos</td>
-<td>Como jogador, quero identificar visualmente tipos de inimigos por seus designs únicos.</td>
-</tr>
-<tr>
-<td>US09</td>
-<td>F05 - Criar sprites para inimigos</td>
-<td>Como artista, quero criar sprites que comuniquem claramente a raridade e periculosidade de cada inimigo.</td>
-</tr>
-<tr>
-<td>US10</td>
-<td>F06 - Criar sprites para NPCs</td>
-<td>Como jogador, quero reconhecer NPCs importantes por seus designs distintivos.</td>
-</tr>
-<tr>
-<td>US11</td>
-<td>F06 - Criar sprites para NPCs</td>
-<td>Como narrador, quero que NPCs tenham expressões faciais variadas para enriquecer diálogos.</td>
-</tr>
-<tr>
-<td>US12</td>
-<td>F07 - Integrar animações com combate</td>
-<td>Como jogador, quero ver animações fluidas durante ataques e defesas no combate.</td>
-</tr>
-<tr>
-<td>US13</td>
-<td>F07 - Integrar animações com combate</td>
-<td>Como desenvolvedor, quero sincronizar eventos de animação com triggers do sistema de combate.</td>
-</tr>
-<tr>
-<td>US14</td>
-<td>F08 - Designar ícones para cartas e dados</td>
-<td>Como jogador, quero identificar rapidamente tipos de cartas/dados por seus ícones durante o combate.</td>
-</tr>
-<tr>
-<td>US15</td>
-<td>F08 - Designar ícones para cartas e dados</td>
-<td>Como artista, quero criar ícones que sigam uma sinalização consistente por raridade.</td>
-</tr>
-<tr>
-<td>US16</td>
-<td>F09 - Criar animações de aquisição de itens</td>
-<td>Como jogador, quero ver feedback visual ao adquirir novos itens .</td>
-</tr>
-<tr>
-<td>US17</td>
-<td>F09 - Criar animações de aquisição de itens</td>
-<td>Como desenvolvedor, quero que animações de itens não interrompam o fluxo do jogo.</td>
-</tr>
-<tr>
-<td>US18</td>
-<td>F10 - Exibir dados coletados no menu</td>
-<td>Como jogador, quero consultar regras e estatísticas dos meus dados a qualquer momento.</td>
-</tr>
-<tr>
-<td>US19</td>
-<td>F10 - Exibir dados coletados no menu</td>
-<td>Como desenvolvedor, quero organizar as informações do saco de dados em categorias intuitivas.</td>
-</tr>
-<tr>
-<td>US20</td>
-<td>F11 - Implementar arrastar/soltar cartas</td>
-<td>Como jogador, quero reorganizar meu deck arrastando cartas com o mouse/controle.</td>
-</tr>
-<tr>
-<td>US21</td>
-<td>F11 - Implementar arrastar/soltar cartas</td>
-<td>Como UX designer, quero fornecer feedback visual durante a interação de arrastar (hover, drop válido/inválido).</td>
-</tr>
-<tr>
-<td>US22</td>
-<td>F12 - Criar sistema de lançamento de dados</td>
-<td>Como jogador, quero lançar dados com física realista e resultados claramente visíveis.</td>
-</tr>
-<tr>
-<td>US23</td>
-<td>F12 - Criar sistema de lançamento de dados</td>
-<td>Como desenvolvedor, quero calcular resultados com base na posição final do dado 3D.</td>
-</tr>
-<tr>
-<td>US24</td>
-<td>F13 - Exibir resultado do dado no HUD</td>
-<td>Como jogador, quero ver imediatamente o valor do dado em uma interface clara durante o combate.</td>
-</tr>
-<tr>
-<td>US25</td>
-<td>F13 - Exibir resultado do dado no HUD</td>
-<td>Como desenvolvedor, quero formatar a exibição do resultado para ser legível em diferentes resoluções.</td>
-</tr>
-<tr>
-<td>US26</td>
-<td>F14 - Implementar sistema de combos</td>
-<td>Como jogador, quero executar combos específicos ao jogar sequências de cartas para efeitos.</td>
-</tr>
-<tr>
-<td>US27</td>
-<td>F14 - Implementar sistema de combos</td>
-<td>Como game designer, quero criar um sistema de combos para dados.</td>
-</tr>
-<tr>
-<td>US28</td>
-<td>F15 - Aplicar efeitos de cartas</td>
-<td>Como jogador, quero ver feedback visual claro quando efeitos de cartas são ativados (positivos/negativos).</td>
-</tr>
-<tr>
-<td>US29</td>
-<td>F15 - Aplicar efeitos de cartas</td>
-<td>Como desenvolvedor, quero implementar um sistema modular de efeitos que possa ser expandido com novas cartas.</td>
-</tr>
-<tr>
-<td>US30</td>
-<td>F16 - Criar tabela de eventos</td>
-<td>Como game designer, quero criar eventos com probabilidades balanceadas para evitar repetição excessiva.</td>
-</tr>
-<tr>
-<td>US31</td>
-<td>F16 - Criar tabela de eventos</td>
-<td>Como jogador, quero encontrar eventos aleatórios para me beneficiar (ou não) em jogo.</td>
-</tr>
-<tr>
-<td>US32</td>
-<td>F17 - Escrever descrições de eventos</td>
-<td>Como narrador, quero que eventos tenham textos imersivos que complementem o tom do jogo.</td>
-</tr>
-<tr>
-<td>US33</td>
-<td>F17 - Escrever descrições de eventos</td>
-<td>Como jogador, quero entender claramente as consequências de minhas escolhas nos eventos.</td>
-</tr>
-<tr>
-<td>US34</td>
-<td>F18 - Definir pontos de ativação</td>
-<td>Como designer, quero distribuir eventos aleatórios de forma a manter um ritmo de jogo equilibrado.</td>
-</tr>
-<tr>
-<td>US35</td>
-<td>F18 - Definir pontos de ativação</td>
-<td>Como jogador, quero poder selecionar o evento aleatório na trilha.</td>
-</tr>
-<tr>
-<td>US36</td>
-<td>F19 - Integrar eventos como interrupções</td>
-<td>Como jogador, quero que eventos aleatórios ofereçam pausas estratégicas no fluxo principal.</td>
-</tr>
-<tr>
-<td>US37</td>
-<td>F19 - Integrar eventos como interrupções</td>
-<td>Como desenvolvedor, quero implementar um sistema que garanta que eventos não travem o progresso principal.</td>
-</tr>
-<tr>
-<td>US38</td>
-<td>F20 - Gerar caminhos aleatórios</td>
-<td>Como jogador, quero utilizar um sistema de navegação em trilha aleatório</td>
-</tr>
-<tr>
-<td>US39</td>
-<td>F20 - Gerar caminhos aleatórios</td>
-<td>Como desenvolvedor, quero garantir que caminhos sejam gerados aleatóriamente.</td>
-</tr>
-<tr>
-<td>US40</td>
-<td>F21 - Definir pesos para bifurcações</td>
-<td>Como game designer, quero controlar a probabilidade de certos tipos de encontros aparecerem em cada nível.</td>
-</tr>
-<tr>
-<td>US41</td>
-<td>F21 - Definir pesos para bifurcações</td>
-<td>Como jogador, quero sentir um senso de escolha e análise a partir das bifurcações.</td>
-</tr>
-<tr>
-<td>US42</td>
-<td>F22 - Criar mapa da trilha</td>
-<td>Como jogador, quero visualizar meu progresso e opções futuras no mapa de forma intuitiva.</td>
-</tr>
-<tr>
-<td>US43</td>
-<td>F22 - Criar mapa da trilha</td>
-<td>Como UX designer, quero representar visualmente os tipos de encontros possíveis em cada nó do mapa.</td>
-</tr>
-<tr>
-<td>US44</td>
-<td>F23 - Permitir seleção de caminho</td>
-<td>Como jogador, quero confirmar minha escolha de caminho antes de prosseguir para evitar erros.</td>
-</tr>
-<tr>
-<td>US45</td>
-<td>F23 - Permitir seleção de caminho</td>
-<td>Como desenvolvedor, quero implementar um fluxo para ser seguido pelo jogador</td>
-</tr>
-<tr>
-<td>US46</td>
-<td>F24 - Exibir loja com cartas disponíveis</td>
-<td>Como jogador, quero visualizar estatísticas e custos das cartas antes de comprar.</td>
-</tr>
-<tr>
-<td>US47</td>
-<td>F24 - Exibir loja com cartas disponíveis</td>
-<td>Como desenvolvedor, quero realizar uma tabela de possibilidades para aquisição das cartas</td>
-</tr>
-<tr>
-<td>US48</td>
-<td>F25 - Criar pop-up de confirmação</td>
-<td>Como jogador, quero ver detalhes completos da carta antes de confirmar a compra.</td>
-</tr>
-<tr>
-<td>US49</td>
-<td>F25 - Criar pop-up de confirmação</td>
-<td>Como UX designer, quero evitar compras acidentais com confirmação clara mas não intrusiva.</td>
-</tr>
-<tr>
-<td>US50</td>
-<td>F26 - Implementar sistema de moeda</td>
-<td>Como jogador, quero ganhar moedas de forma proporcional ao desafio superado.</td>
-</tr>
-<tr>
-<td>US51</td>
-<td>F26 - Implementar sistema de moeda</td>
-<td>Como designer, quero balancear a economia para que moedas sejam valiosas mas não excessivamente raras.</td>
-</tr>
-<tr>
-<td>US52</td>
-<td>F27 - Exibir saldo na loja</td>
-<td>Como jogador, quero ver meu saldo atualizado em tempo real durante compras.</td>
-</tr>
-<tr>
-<td>US53</td>
-<td>F27 - Exibir saldo na loja</td>
-<td>Como desenvolvedor, quero formatar a exibição de moedas para ser legível mesmo em valores altos.</td>
-</tr>
-<tr>
-<td>US54</td>
-<td>F28 - Criar menus principais</td>
-<td>Como jogador, quero acessar todas as funcionalidades principais em no máximo 3 cliques a partir do menu inicial.</td>
-</tr>
-<tr>
-<td>US55</td>
-<td>F28 - Criar menus principais</td>
-<td>Como desenvolvedor, quero implementar um sistema de navegação por teclado/controle seguindo padrões acessíveis.</td>
-</tr>
-<tr>
-<td>US56</td>
-<td>F29 - Programar navegação entre menus</td>
-<td>Como jogador, quero navegar os menus usando atalhos intuitivos (setas, Enter, Esc).</td>
-</tr>
-<tr>
-<td>US57</td>
-<td>F29 - Programar navegação entre menus</td>
-<td>Como testador, quero garantir que o foco do controle nunca se perda durante a navegação.</td>
-</tr>
-<tr>
-<td>US58</td>
-<td>F30 - Adicionar transições animadas</td>
-<td>Como jogador, quero transições suaves entre menus que não causem desorientação.</td>
-</tr>
-<tr>
-<td>US59</td>
-<td>F30 - Adicionar transições animadas</td>
-<td>Como desenvolvedor, quero otimizar animações para que não aumentem significativamente o tempo de carregamento.</td>
-</tr>
-<tr>
-<td>US60</td>
-<td>F31 - Implementar sons de menu</td>
-<td>Como jogador, quero feedback auditivo claro para interações com menus.</td>
-</tr>
-<tr>
-<td>US61</td>
-<td>F31 - Implementar sons de menu</td>
-<td>Como designer de som, quero criar uma identidade auditiva consistente para todas as interfaces.</td>
-</tr>
-<tr>
-<td>US62</td>
-<td>F32 - Exibir status do jogador</td>
-<td>Como jogador, quero monitorar minha vida, recursos e status atual durante o combate sem obstruir a visão.</td>
-</tr>
-<tr>
-<td>US63</td>
-<td>F32 - Exibir status do jogador</td>
-<td>Como UX designer, quero organizar as informações prioritárias no HUD de forma hierárquica.</td>
-</tr>
-<tr>
-<td>US64</td>
-<td>F33 - Exibir informações do inimigo</td>
-<td>Como jogador, quero ver a vida e status dos inimigos para planejar minha estratégia.</td>
-</tr>
-<tr>
-<td>US65</td>
-<td>F33 - Exibir informações do inimigo</td>
-<td>Como desenvolvedor, quero implementar um sistema de barras de vida que escalone para diferentes tamanhos de inimigos.</td>
-</tr>
-<tr>
-<td>US66</td>
-<td>F34 - Criar efeitos visuais de dano</td>
-<td>Como jogador, quero feedback visual imediato quando causo ou recebo dano.</td>
-</tr>
-<tr>
-<td>US67</td>
-<td>F34 - Criar efeitos visuais de dano</td>
-<td>Como artista, quero diferenciar visualmente tipos de dano (inimigo, jogador)</td>
-</tr>
-<tr>
-<td>US68</td>
-<td>F35 - Criar efeitos de interação</td>
-<td>Como jogador, quero perceber claramente quando um objeto no cenário é interagível.</td>
-</tr>
-<tr>
-<td>US69</td>
-<td>F35 - Criar efeitos de interação</td>
-<td>Como desenvolvedor, quero que efeitos de interação não sobrecarreguem visualmente o jogador.</td>
-</tr>
-<tr>
-<td>US70</td>
-<td>F36 - Compor trilhas para cada círculo</td>
-<td>Como jogador, quero músicas que reforcem a identidade única de cada círculo do Inferno.</td>
-</tr>
-<tr>
-<td>US71</td>
-<td>F36 - Compor trilhas para cada círculo</td>
-<td>Como compositor, quero criar leitmotivs que evoluam conforme o jogador progride.</td>
-</tr>
-<tr>
-<td>US72</td>
-<td>F37 - Mixar músicas em camadas</td>
-<td>Como jogador, quero transições dinâmicas entre estados musicais (mapa -&gt; combate).</td>
-</tr>
-<tr>
-<td>US73</td>
-<td>F37 - Mixar músicas em camadas</td>
-<td>Como desenvolvedor, quero um sistema que alterne entre camadas musicais sem cortes ou repetições bruscas.</td>
-</tr>
-<tr>
-<td>US74</td>
-<td>F38 - Mudar intensidade da trilha</td>
-<td>Como jogador, quero que a música reflita a tensão do momento (ex: chefes finais tenham trilhas épicas).</td>
-</tr>
-<tr>
-<td>US75</td>
-<td>F38 - Mudar intensidade da trilha</td>
-<td>Como designer de áudio, quero implementar parâmetros dinâmicos que modifiquem a música com base no estado do jogo.</td>
-</tr>
-<tr>
-<td>US76</td>
-<td>F39 - Adicionar transições entre trilhas</td>
-<td>Como jogador, quero transições musicais suaves ao mudar de área ou entrar em combate.</td>
-</tr>
-<tr>
-<td>US77</td>
-<td>F39 - Adicionar transições entre trilhas</td>
-<td>Como desenvolvedor, quero garantir que transições musicais não causem stuttering ou lag.</td>
-</tr>
-<tr>
-<td>US78</td>
-<td>F40 - Criar sons para interações</td>
-<td>Como jogador, quero feedback auditivo único para ações importantes.</td>
-</tr>
-<tr>
-<td>US79</td>
-<td>F40 - Criar sons para interações</td>
-<td>Como designer de som, quero estabelecer uma paleta sonora coerente com o tema sombrio do jogo.</td>
-</tr>
-<tr>
-<td>US80</td>
-<td>F41 - Adicionar sons de cartas</td>
-<td>Como jogador, quero sons distintos para cartas de diferentes raridades.</td>
-</tr>
-<tr>
-<td>US81</td>
-<td>F41 - Adicionar sons de cartas</td>
-<td>Como desenvolvedor, quero que sons de cartas sejam espacializados quando aplicável.</td>
-</tr>
-<tr>
-<td>US82</td>
-<td>F42 - Integrar sons com animações</td>
-<td>Como jogador, quero sincronia perfeita entre sons e animações de ataques.</td>
-</tr>
-<tr>
-<td>US83</td>
-<td>F42 - Integrar sons com animações</td>
-<td>Como animador, quero marcas temporais precisas para sincronizar efeitos sonoros.</td>
-</tr>
-<tr>
-<td>US84</td>
-<td>F43 - Integrar sons dos NPCs</td>
-<td>Como jogador, quero que NPCs tenham vozes ou sons característicos que os diferenciem.</td>
-</tr>
-<tr>
-<td>US85</td>
-<td>F43 - Integrar sons dos NPCs</td>
-<td>Como desenvolvedor, quero que diálogos importantes tenham prioridade sonora sobre ambientes.</td>
-</tr>
-<tr>
-<td>US86</td>
-<td>F44 - Escrever diálogos ramificados</td>
-<td>Como jogador, quero que minhas escolhas nos diálogos impactem a narrativa e o mundo.</td>
-</tr>
-<tr>
-<td>US87</td>
-<td>F44 - Escrever diálogos ramificados</td>
-<td>Como escritor, quero estruturar diálogos em árvores lógicas que sejam fáceis de implementar.</td>
-</tr>
-<tr>
-<td>US88</td>
-<td>F45 - Organizar diálogos em planilha</td>
-<td>Como desenvolvedor, quero exportar diálogos para o engine a partir de planilhas.</td>
-</tr>
-<tr>
-<td>US89</td>
-<td>F45 - Organizar diálogos em planilha</td>
-<td>Como tradutor, quero acesso estruturado a todos os textos do jogo para tradução.</td>
-</tr>
-<tr>
-<td>US90</td>
-<td>F46 - Criar falas provocativas</td>
-<td>Como jogador, quero que chefes reajam às minhas ações durante o combate com falas imersivas.</td>
-</tr>
-<tr>
-<td>US91</td>
-<td>F46 - Criar falas provocativas</td>
-<td>Como escritor, quero criar taunts que variem conforme a progressão do jogador no combate.</td>
-</tr>
-<tr>
-<td>US92</td>
-<td>F47 - Integrar taunts com combate</td>
-<td>Como jogador, quero que provocações de chefes sejam acionadas em momentos dramáticos (ex: baixa vida, combos).</td>
-</tr>
-<tr>
-<td>US93</td>
-<td>F47 - Integrar taunts com combate</td>
-<td>Como desenvolvedor, quero implementar um sistema de triggers que não interrompa o fluxo do combate.</td>
-</tr>
-<tr>
-<td>US94</td>
-<td>F48 - Criar menu de artefatos</td>
-<td>Como jogador, quero visualizar minha coleção de artefatos.</td>
-</tr>
-<tr>
-<td>US95</td>
-<td>F48 - Criar menu de artefatos</td>
-<td>Como designer, quero que o menu de artefatos mostre progresso de conquistas relacionadas.</td>
-</tr>
-<tr>
-<td>US96</td>
-<td>F49 - Desbloquear artefatos colecionáveis</td>
-<td>Como jogador, quero receber artefatos como recompensa por desafios significativos.</td>
-</tr>
-<tr>
-<td>US97</td>
-<td>F49 - Desbloquear artefatos colecionáveis</td>
-<td>Como desenvolvedor, quero rastrear artefatos desbloqueados via sistema de save.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="historias-de-usuario-priorizadas">Histórias de Usuário Priorizadas<a class="headerlink" href="#historias-de-usuario-priorizadas" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>US</th>
-<th>Complexidade</th>
-<th>Risco</th>
-<th>Importância</th>
-<th>Valor Priorizado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>29</td>
-<td>4</td>
-<td>1</td>
-<td>5</td>
-<td>20</td>
-</tr>
-<tr>
-<td>51</td>
-<td>4</td>
-<td>1</td>
-<td>5</td>
-<td>20</td>
-</tr>
-<tr>
-<td>60</td>
-<td>4</td>
-<td>1</td>
-<td>5</td>
-<td>20</td>
-</tr>
-<tr>
-<td>69</td>
-<td>4</td>
-<td>1</td>
-<td>5</td>
-<td>20</td>
-</tr>
-<tr>
-<td>79</td>
-<td>4</td>
-<td>1</td>
-<td>5</td>
-<td>20</td>
-</tr>
-<tr>
-<td>8</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>9</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>10</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>14</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>28</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>31</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>50</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>63</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>68</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>87</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>15</td>
-</tr>
-<tr>
-<td>38</td>
-<td>5</td>
-<td>2</td>
-<td>5</td>
-<td>12.5</td>
-</tr>
-<tr>
-<td>61</td>
-<td>5</td>
-<td>2</td>
-<td>5</td>
-<td>12.5</td>
-</tr>
-<tr>
-<td>90</td>
-<td>4</td>
-<td>2</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>12</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>18</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>25</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>42</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>43</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>46</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>48</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>49</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>62</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>64</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>66</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>89</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>91</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td>26</td>
-<td>3</td>
-<td>2</td>
-<td>5</td>
-<td>7.5</td>
-</tr>
-<tr>
-<td>36</td>
-<td>3</td>
-<td>2</td>
-<td>5</td>
-<td>7.5</td>
-</tr>
-<tr>
-<td>37</td>
-<td>3</td>
-<td>2</td>
-<td>5</td>
-<td>7.5</td>
-</tr>
-<tr>
-<td>27</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
-<td>6.666666667</td>
-</tr>
-<tr>
-<td>30</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
-<td>6.666666667</td>
-</tr>
-<tr>
-<td>34</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
-<td>6.666666667</td>
-</tr>
-<tr>
-<td>45</td>
-<td>5</td>
-<td>5</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>17</td>
-<td>3</td>
-<td>3</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>39</td>
-<td>3</td>
-<td>3</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>93</td>
-<td>3</td>
-<td>3</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>22</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>23</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>24</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>32</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>33</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>35</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>44</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>52</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>88</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>13</td>
-<td>2</td>
-<td>3</td>
-<td>5</td>
-<td>3.333333333</td>
-</tr>
-<tr>
-<td>41</td>
-<td>3</td>
-<td>5</td>
-<td>5</td>
-<td>3</td>
-</tr>
-<tr>
-<td>84</td>
-<td>4</td>
-<td>1</td>
-<td>4</td>
-<td>16</td>
-</tr>
-<tr>
-<td>92</td>
-<td>4</td>
-<td>1</td>
-<td>4</td>
-<td>16</td>
-</tr>
-<tr>
-<td>15</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>12</td>
-</tr>
-<tr>
-<td>16</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>12</td>
-</tr>
-<tr>
-<td>47</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>12</td>
-</tr>
-<tr>
-<td>65</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>12</td>
-</tr>
-<tr>
-<td>70</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>12</td>
-</tr>
-<tr>
-<td>76</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>12</td>
-</tr>
-<tr>
-<td>78</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>12</td>
-</tr>
-<tr>
-<td>82</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>12</td>
-</tr>
-<tr>
-<td>58</td>
-<td>2</td>
-<td>1</td>
-<td>4</td>
-<td>8</td>
-</tr>
-<tr>
-<td>83</td>
-<td>3</td>
-<td>2</td>
-<td>4</td>
-<td>6</td>
-</tr>
-<tr>
-<td>40</td>
-<td>1</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
-</tr>
-<tr>
-<td>54</td>
-<td>1</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
-</tr>
-<tr>
-<td>74</td>
-<td>4</td>
-<td>1</td>
-<td>3</td>
-<td>12</td>
-</tr>
-<tr>
-<td>20</td>
-<td>3</td>
-<td>1</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>21</td>
-<td>3</td>
-<td>1</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>59</td>
-<td>3</td>
-<td>1</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>67</td>
-<td>3</td>
-<td>1</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>86</td>
-<td>3</td>
-<td>1</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>94</td>
-<td>2</td>
-<td>1</td>
-<td>3</td>
-<td>6</td>
-</tr>
-<tr>
-<td>95</td>
-<td>2</td>
-<td>1</td>
-<td>3</td>
-<td>6</td>
-</tr>
-<tr>
-<td>96</td>
-<td>2</td>
-<td>1</td>
-<td>3</td>
-<td>6</td>
-</tr>
-<tr>
-<td>97</td>
-<td>2</td>
-<td>1</td>
-<td>3</td>
-<td>6</td>
-</tr>
-<tr>
-<td>55</td>
-<td>3</td>
-<td>2</td>
-<td>3</td>
-<td>4.5</td>
-</tr>
-<tr>
-<td>56</td>
-<td>3</td>
-<td>2</td>
-<td>3</td>
-<td>4.5</td>
-</tr>
-<tr>
-<td>57</td>
-<td>3</td>
-<td>2</td>
-<td>3</td>
-<td>4.5</td>
-</tr>
-<tr>
-<td>77</td>
-<td>3</td>
-<td>3</td>
-<td>3</td>
-<td>3</td>
-</tr>
-<tr>
-<td>71</td>
-<td>5</td>
-<td>1</td>
-<td>2</td>
-<td>10</td>
-</tr>
-<tr>
-<td>73</td>
-<td>5</td>
-<td>1</td>
-<td>2</td>
-<td>10</td>
-</tr>
-<tr>
-<td>85</td>
-<td>2</td>
-<td>1</td>
-<td>2</td>
-<td>4</td>
-</tr>
-<tr>
-<td>11</td>
-<td>5</td>
-<td>4</td>
-<td>2</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>7</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td>53</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td>4</td>
-<td>4</td>
-<td>1</td>
-<td>1</td>
-<td>4</td>
-</tr>
-<tr>
-<td>72</td>
-<td>4</td>
-<td>1</td>
-<td>1</td>
-<td>4</td>
-</tr>
-<tr>
-<td>75</td>
-<td>4</td>
-<td>1</td>
-<td>1</td>
-<td>4</td>
-</tr>
-<tr>
-<td>1</td>
-<td>3</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr>
-<td>2</td>
-<td>3</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr>
-<td>3</td>
-<td>3</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr>
-<td>80</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr>
-<td>5</td>
-<td>5</td>
-<td>5</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>6</td>
-<td>5</td>
-<td>5</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>19</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>81</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="backlog-priorizado">Backlog Priorizado<a class="headerlink" href="#backlog-priorizado" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th><strong>Tema (tm-xx)</strong></th>
-<th><strong>Épico (Ep-xx)</strong></th>
-<th><strong>Capacidade (C)</strong></th>
-<th><strong>Funcionalidade (F)</strong></th>
-<th><strong>História de usuário (US)</strong></th>
-<th><strong>Valor Priorizado (VP)</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TM02</td>
-<td>EP04 - Combate</td>
-<td>C08 - Implementar o sistema das cartas</td>
-<td>F15 - Aplicar efeitos específicos das cartas no inimigo ou jogador</td>
-<td>US29 - Como desenvolvedor, quero implementar um sistema modular de efeitos que possa ser expandido com novas cartas.</td>
-<td>20</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP07 - Loja</td>
-<td>C14 - Programar sistema de moedas e economia</td>
-<td>F26 - Implementar sistema de moeda obtida em batalhas ou eventos</td>
-<td>US51 - Como designer, quero balancear a economia para que moedas sejam valiosas mas não excessivamente raras.</td>
-<td>20</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP08 - Menus de Navegação</td>
-<td>C16 - Implementar transições visuais entre menus</td>
-<td>F31 - Implementar sons de menu sincronizados com animações</td>
-<td>US60 - Como jogador, quero feedback auditivo claro para interações com menus.</td>
-<td>20</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP09 - HUD e Feedback Visual</td>
-<td>C18 - Exibir efeitos visuais em ações como dano ou combo</td>
-<td>F35 - Criar efeitos visuais de interação com objetos</td>
-<td>US69 - Como desenvolvedor, quero que efeitos de interação não sobrecarreguem visualmente o jogador.</td>
-<td>20</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP11 - Efeitos Sonoros</td>
-<td>C21 - Adicionar sons para interações, menus e ações de combate</td>
-<td>F40 - Criar sons para interações e menus</td>
-<td>US79 - Como designer de som, quero estabelecer uma paleta sonora coerente com o tema sombrio do jogo.</td>
-<td>20</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP11 - Efeitos Sonoros</td>
-<td>C22 - Integrar efeitos sonoros com sistema de animação</td>
-<td>F43 - Integrar sons dos NPCs</td>
-<td>US84 - Como jogador, quero que NPCs tenham vozes ou sons característicos que os diferenciem.</td>
-<td>16</td>
-</tr>
-<tr>
-<td>TM05</td>
-<td>EP12 - Diálogos</td>
-<td>C28 - Implementar sistema de taunt de elites e boss para o jogador</td>
-<td>F47 - Integrar sistema de taunts com entrada de combate do jogador</td>
-<td>US92 - Como jogador, quero que provocações de chefes sejam acionadas em momentos dramáticos (ex: baixa vida, combos).</td>
-<td>16</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 - Criação de Cenários</td>
-<td>C01 - Criar cenários únicos para cada círculo do Inferno</td>
-<td>F01 - Criar um fundo temático para cada círculo</td>
-<td>US01 - Como jogador, quero visualizar cenários únicos em cada círculo do Inferno para imersão na ambientação.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 - Criação de Cenários</td>
-<td>C01 - Criar cenários únicos para cada círculo do Inferno</td>
-<td>F01 - Criar um fundo temático para cada círculo</td>
-<td>US02 - Como artista, quero criar assets visuais distintos para cada círculo que reflitam suas características temáticas.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 - Criação de Cenários</td>
-<td>C01 - Criar cenários únicos para cada círculo do Inferno</td>
-<td>F02 - Integrar cenário com objetos temáticos</td>
-<td>US03 - Como jogador, quero visualizar objetos ambientais que complementem a narrativa de cada círculo.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 - Criação de Cenários</td>
-<td>C01 - Criar cenários únicos para cada círculo do Inferno</td>
-<td>F02 - Integrar cenário com objetos temáticos</td>
-<td>US04 - Como artista, quero criar entidades para o cenário com interações consistentes com a jogabilidade.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP02 - Criação de Personagens</td>
-<td>C03 - Criar modelos 2D para NPCs e inimigos</td>
-<td>F05 - Criar os sprites para os inimigos</td>
-<td>US08 - Como jogador, quero identificar visualmente tipos de inimigos por seus designs únicos.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP02 - Criação de Personagens</td>
-<td>C03 - Criar modelos 2D para NPCs e inimigos</td>
-<td>F05 - Criar os sprites para os inimigos</td>
-<td>US09 - Como artista, quero criar sprites que comuniquem claramente a raridade e periculosidade de cada inimigo.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP02 - Criação de Personagens</td>
-<td>C03 - Criar modelos 2D para NPCs e inimigos</td>
-<td>F06 - Criar os sprites para os NPCs</td>
-<td>US10 - Como jogador, quero reconhecer NPCs importantes por seus designs distintivos.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP02 - Criação de Personagens</td>
-<td>C03 - Criar modelos 2D para NPCs e inimigos</td>
-<td>F06 - Criar os sprites para os NPCs</td>
-<td>US11 - Como narrador, quero que NPCs tenham expressões faciais variadas para enriquecer diálogos.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C05 - Criar visuais distintos para cada item</td>
-<td>F08 - Designar ícones únicos para cada tipo de carta e dado</td>
-<td>US14 - Como jogador, quero identificar rapidamente tipos de cartas/dados por seus ícones durante o combate.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C05 - Criar visuais distintos para cada item</td>
-<td>F08 - Designar ícones únicos para cada tipo de carta e dado</td>
-<td>US15 - Como artista, quero criar ícones que sigam uma sinalização consistente por raridade.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C06 - Integrar itens com sistema de menu (saco de dados e deck)</td>
-<td>F11 - Implementar sistema de arrastar e soltar cartas no menu de deck</td>
-<td>US20 - Como jogador, quero reorganizar meu deck arrastando cartas com o mouse/controle.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C06 - Integrar itens com sistema de menu (saco de dados e deck)</td>
-<td>F11 - Implementar sistema de arrastar e soltar cartas no menu de deck</td>
-<td>US21 - Como UX designer, quero fornecer feedback visual durante a interação de arrastar (hover, drop válido/inválido).</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C29 - Integrar o sistema de artefatos</td>
-<td>F48 - Criar o menu de artefatos</td>
-<td>US94 - Como jogador, quero visualizar minha coleção de artefatos.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C29 - Integrar o sistema de artefatos</td>
-<td>F48 - Criar o menu de artefatos</td>
-<td>US95 - Como designer, quero que o menu de artefatos mostre progresso de conquistas relacionadas.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C29 - Integrar o sistema de artefatos</td>
-<td>F49 - Desbloquear os artefatos como colecionáveis</td>
-<td>US96 - Como jogador, quero receber artefatos como recompensa por desafios significativos.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C29 - Integrar o sistema de artefatos</td>
-<td>F49 - Desbloquear os artefatos como colecionáveis</td>
-<td>US97 - Como desenvolvedor, quero rastrear artefatos desbloqueados via sistema de save.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP04 - Combate</td>
-<td>C08 - Implementar o sistema das cartas</td>
-<td>F15 - Aplicar efeitos específicos das cartas no inimigo ou jogador</td>
-<td>US28 - Como jogador, quero ver feedback visual claro quando efeitos de cartas são ativados (positivos/negativos).</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP05 - Eventos Aleatórios</td>
-<td>C09 - Gerar eventos com consequências variadas</td>
-<td>F16 - Criar tabela de eventos com tipos: positivos, negativos e neutros</td>
-<td>US31 - Como jogador, quero encontrar eventos aleatórios para me beneficiar (ou não) em jogo.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP07 - Loja</td>
-<td>C14 - Programar sistema de moedas e economia</td>
-<td>F26 - Implementar sistema de moeda obtida em batalhas ou eventos</td>
-<td>US50 - Como jogador, quero ganhar moedas de forma proporcional ao desafio superado.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP08 - Menus de Navegação</td>
-<td>C16 - Implementar transições visuais entre menus</td>
-<td>F30 - Adicionar transições animadas entre menus</td>
-<td>US58 - Como jogador, quero transições suaves entre menus que não causem desorientação.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP08 - Menus de Navegação</td>
-<td>C16 - Implementar transições visuais entre menus</td>
-<td>F30 - Adicionar transições animadas entre menus</td>
-<td>US59 - Como desenvolvedor, quero otimizar animações para que não aumentem significativamente o tempo de carregamento.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP09 - HUD e Feedback Visual</td>
-<td>C17 - Mostrar informações de combate e status do jogador</td>
-<td>F32 - Exibir status do jogador (vida, cartas, dados) durante o combate</td>
-<td>US63 - Como UX designer, quero organizar as informações prioritárias no HUD de forma hierárquica.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP09 - HUD e Feedback Visual</td>
-<td>C18 - Exibir efeitos visuais em ações como dano ou combo</td>
-<td>F34 - Criar efeitos visuais de danos e combos</td>
-<td>US67 - Como artista, quero diferenciar visualmente tipos de dano (inimigo, jogador)</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP09 - HUD e Feedback Visual</td>
-<td>C18 - Exibir efeitos visuais em ações como dano ou combo</td>
-<td>F35 - Criar efeitos visuais de interação com objetos</td>
-<td>US68 - Como jogador, quero perceber claramente quando um objeto no cenário é interagível.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP10 - Composição de Músicas</td>
-<td>C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno</td>
-<td>F36 - Compor trilhas sonoras únicas para cada círculo com base em ambientação</td>
-<td>US70 - Como jogador, quero músicas que reforcem a identidade única de cada círculo do Inferno.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP10 - Composição de Músicas</td>
-<td>C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno</td>
-<td>F37 - Mixar músicas em camadas (base, combate, tensão) para cada cenário</td>
-<td>US72 - Como jogador, quero transições dinâmicas entre estados musicais (mapa -&gt; combate).</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP10 - Composição de Músicas</td>
-<td>C20 - Implementar variações dinâmicas na música conforme ações do jogador</td>
-<td>F38 - Mudar a intensidade da trilha com base na ação do jogador (ex: combate)</td>
-<td>US74 - Como jogador, quero que a música reflita a tensão do momento (ex: chefes finais tenham trilhas épicas).</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP10 - Composição de Músicas</td>
-<td>C20 - Implementar variações dinâmicas na música conforme ações do jogador</td>
-<td>F38 - Mudar a intensidade da trilha com base na ação do jogador (ex: combate)</td>
-<td>US75 - Como designer de áudio, quero implementar parâmetros dinâmicos que modifiquem a música com base no estado do jogo.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP10 - Composição de Músicas</td>
-<td>C20 - Implementar variações dinâmicas na música conforme ações do jogador</td>
-<td>F39 - Adicionar transições suaves entre trilhas com base em gatilhos do jogo</td>
-<td>US76 - Como jogador, quero transições musicais suaves ao mudar de área ou entrar em combate.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP11 - Efeitos Sonoros</td>
-<td>C21 - Adicionar sons para interações, menus e ações de combate</td>
-<td>F40 - Criar sons para interações e menus</td>
-<td>US78 - Como jogador, quero feedback auditivo único para ações importantes.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP11 - Efeitos Sonoros</td>
-<td>C21 - Adicionar sons para interações, menus e ações de combate</td>
-<td>F41 - Adicionar sons únicos para usos de carta e efeitos de combo</td>
-<td>US80 - Como jogador, quero sons distintos para cartas de diferentes raridades.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP11 - Efeitos Sonoros</td>
-<td>C21 - Adicionar sons para interações, menus e ações de combate</td>
-<td>F41 - Adicionar sons únicos para usos de carta e efeitos de combo</td>
-<td>US81 - Como desenvolvedor, quero que sons de cartas sejam espacializados quando aplicável.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP11 - Efeitos Sonoros</td>
-<td>C22 - Integrar efeitos sonoros com sistema de animação</td>
-<td>F42 - Integrar sons com animações de ataque e interação</td>
-<td>US82 - Como jogador, quero sincronia perfeita entre sons e animações de ataques.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP11 - Efeitos Sonoros</td>
-<td>C22 - Integrar efeitos sonoros com sistema de animação</td>
-<td>F43 - Integrar sons dos NPCs</td>
-<td>US85 - Como desenvolvedor, quero que diálogos importantes tenham prioridade sonora sobre ambientes.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM05</td>
-<td>EP12 - Diálogos</td>
-<td>C27 - Escrever os diálogos do jogo</td>
-<td>F44 - Escrever diálogos ramificados para personagens importantes</td>
-<td>US86 - Como jogador, quero que minhas escolhas nos diálogos impactem a narrativa e o mundo.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM05</td>
-<td>EP12 - Diálogos</td>
-<td>C27 - Escrever os diálogos do jogo</td>
-<td>F44 - Escrever diálogos ramificados para personagens importantes</td>
-<td>US87 - Como escritor, quero estruturar diálogos em árvores lógicas que sejam fáceis de implementar.</td>
-<td>15</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP06 - Sistema de Trilha</td>
-<td>C11 - Gerar caminhos de progressão aleatórios entre níveis</td>
-<td>F20 - Gerar caminhos aleatórios conectando cenários com regras de progressão</td>
-<td>US38 - Como jogador, quero utilizar um sistema de navegação em trilha aleatório</td>
-<td>12.5</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP08 - Menus de Navegação</td>
-<td>C16 - Implementar transições visuais entre menus</td>
-<td>F31 - Implementar sons de menu sincronizados com animações</td>
-<td>US61 - Como designer de som, quero criar uma identidade auditiva consistente para todas as interfaces.</td>
-<td>12.5</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP02 - Criação de Personagens</td>
-<td>C04 - Integrar personagens com sistema de combate</td>
-<td>F07 - Integrar eventos de animação com sistema de combate</td>
-<td>US12 - Como jogador, quero ver animações fluidas durante ataques e defesas no combate.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C06 - Integrar itens com sistema de menu (saco de dados e deck)</td>
-<td>F10 - Exibir dados coletados e regras do jogo no menu do "saco de dados"</td>
-<td>US18 - Como jogador, quero consultar regras e estatísticas dos meus dados a qualquer momento.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C06 - Integrar itens com sistema de menu (saco de dados e deck)</td>
-<td>F10 - Exibir dados coletados e regras do jogo no menu do "saco de dados"</td>
-<td>US19 - Como desenvolvedor, quero organizar as informações do saco de dados em categorias intuitivas.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP04 - Combate</td>
-<td>C07 - Implementar sistema de lançamento de dados</td>
-<td>F13 - Pegar o valor atual do dado no 3D e exibir resultado em HUD</td>
-<td>US25 - Como desenvolvedor, quero formatar a exibição do resultado para ser legível em diferentes resoluções.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP04 - Combate</td>
-<td>C08 - Implementar o sistema das cartas</td>
-<td>F14 - Implementar sistema de combos a partir das cartas</td>
-<td>US27 - Como game designer, quero criar um sistema de combos para dados.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP06 - Sistema de Trilha</td>
-<td>C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador</td>
-<td>F22 - Criar mapa da trilha com visualização dos caminhos possíveis</td>
-<td>US42 - Como jogador, quero visualizar meu progresso e opções futuras no mapa de forma intuitiva.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP06 - Sistema de Trilha</td>
-<td>C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador</td>
-<td>F22 - Criar mapa da trilha com visualização dos caminhos possíveis</td>
-<td>US43 - Como UX designer, quero representar visualmente os tipos de encontros possíveis em cada nó do mapa.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP07 - Loja</td>
-<td>C13 - Implementar interface de compra de cartas</td>
-<td>F24 - Exibir loja com seções de cartas disponíveis, raridade e custo</td>
-<td>US46 - Como jogador, quero visualizar estatísticas e custos das cartas antes de comprar.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP07 - Loja</td>
-<td>C13 - Implementar interface de compra de cartas</td>
-<td>F24 - Exibir loja com seções de cartas disponíveis, raridade e custo</td>
-<td>US47 - Como desenvolvedor, quero realizar uma tabela de possibilidades para aquisição das cartas</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP07 - Loja</td>
-<td>C14 - Programar sistema de moedas e economia</td>
-<td>F27 - Exibir saldo do jogador na interface da loja</td>
-<td>US53 - Como desenvolvedor, quero formatar a exibição de moedas para ser legível mesmo em valores altos.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP08 - Menus de Navegação</td>
-<td>C15 - Criar estrutura de menus</td>
-<td>F28 - Criar menus para: Jogo, Loja, Deck, Dados, Pausa, Configurações, Créditos</td>
-<td>US54 - Como jogador, quero acessar todas as funcionalidades principais em no máximo 3 cliques a partir do menu inicial.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP08 - Menus de Navegação</td>
-<td>C15 - Criar estrutura de menus</td>
-<td>F28 - Criar menus para: Jogo, Loja, Deck, Dados, Pausa, Configurações, Créditos</td>
-<td>US55 - Como desenvolvedor, quero implementar um sistema de navegação por teclado/controle seguindo padrões acessíveis.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP09 - HUD e Feedback Visual</td>
-<td>C17 - Mostrar informações de combate e status do jogador</td>
-<td>F32 - Exibir status do jogador (vida, cartas, dados) durante o combate</td>
-<td>US62 - Como jogador, quero monitorar minha vida, recursos e status atual durante o combate sem obstruir a visão.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP09 - HUD e Feedback Visual</td>
-<td>C17 - Mostrar informações de combate e status do jogador</td>
-<td>F33 - Exibir informações do inimigo</td>
-<td>US64 - Como jogador, quero ver a vida e status dos inimigos para planejar minha estratégia.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP09 - HUD e Feedback Visual</td>
-<td>C17 - Mostrar informações de combate e status do jogador</td>
-<td>F33 - Exibir informações do inimigo</td>
-<td>US65 - Como desenvolvedor, quero implementar um sistema de barras de vida que escalone para diferentes tamanhos de inimigos.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM03</td>
-<td>EP09 - HUD e Feedback Visual</td>
-<td>C18 - Exibir efeitos visuais em ações como dano ou combo</td>
-<td>F34 - Criar efeitos visuais de danos e combos</td>
-<td>US66 - Como jogador, quero feedback visual imediato quando causo ou recebo dano.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP10 - Composição de Músicas</td>
-<td>C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno</td>
-<td>F36 - Compor trilhas sonoras únicas para cada círculo com base em ambientação</td>
-<td>US71 - Como compositor, quero criar leitmotivs que evoluam conforme o jogador progride.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP10 - Composição de Músicas</td>
-<td>C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno</td>
-<td>F37 - Mixar músicas em camadas (base, combate, tensão) para cada cenário</td>
-<td>US73 - Como desenvolvedor, quero um sistema que alterne entre camadas musicais sem cortes ou repetições bruscas.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM05</td>
-<td>EP12 - Diálogos</td>
-<td>C27 - Escrever os diálogos do jogo</td>
-<td>F45 - Organizar sistema de diálogo em planilha</td>
-<td>US89 - Como tradutor, quero acesso estruturado a todos os textos do jogo para tradução.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM05</td>
-<td>EP12 - Diálogos</td>
-<td>C28 - Implementar sistema de taunt de elites e boss para o jogador</td>
-<td>F46 - Criar falas provocativas para elites e chefes com base no combate</td>
-<td>US90 - Como jogador, quero que chefes reajam às minhas ações durante o combate com falas imersivas.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM05</td>
-<td>EP12 - Diálogos</td>
-<td>C28 - Implementar sistema de taunt de elites e boss para o jogador</td>
-<td>F46 - Criar falas provocativas para elites e chefes com base no combate</td>
-<td>US91 - Como escritor, quero criar taunts que variem conforme a progressão do jogador no combate.</td>
-<td>10</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP04 - Combate</td>
-<td>C08 - Implementar o sistema das cartas</td>
-<td>F14 - Implementar sistema de combos a partir das cartas</td>
-<td>US26 - Como jogador, quero executar combos específicos ao jogar sequências de cartas para efeitos.</td>
-<td>7.5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP05 - Eventos Aleatórios</td>
-<td>C10 - Integrar eventos aleatórios ao fluxo de gameplay</td>
-<td>F19 - Integrar eventos aleatórios como interrupções no fluxo principal</td>
-<td>US36 - Como jogador, quero que eventos aleatórios ofereçam pausas estratégicas no fluxo principal.</td>
-<td>7.5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP05 - Eventos Aleatórios</td>
-<td>C10 - Integrar eventos aleatórios ao fluxo de gameplay</td>
-<td>F19 - Integrar eventos aleatórios como interrupções no fluxo principal</td>
-<td>US37 - Como desenvolvedor, quero implementar um sistema que garanta que eventos não travem o progresso principal.</td>
-<td>7.5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP05 - Eventos Aleatórios</td>
-<td>C09 - Gerar eventos com consequências variadas</td>
-<td>F16 - Criar tabela de eventos com tipos: positivos, negativos e neutros</td>
-<td>US30 - Como game designer, quero criar eventos com probabilidades balanceadas para evitar repetição excessiva.</td>
-<td>6.67</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP05 - Eventos Aleatórios</td>
-<td>C10 - Integrar eventos aleatórios ao fluxo de gameplay</td>
-<td>F18 - Definir pontos de ativação para eventos aleatórios no mapa</td>
-<td>US34 - Como designer, quero distribuir eventos aleatórios de forma a manter um ritmo de jogo equilibrado.</td>
-<td>6.67</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP11 - Efeitos Sonoros</td>
-<td>C22 - Integrar efeitos sonoros com sistema de animação</td>
-<td>F42 - Integrar sons com animações de ataque e interação</td>
-<td>US83 - Como animador, quero marcas temporais precisas para sincronizar efeitos sonoros.</td>
-<td>6</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C05 - Criar visuais distintos para cada item</td>
-<td>F09 - Criar animações de aquisição e uso visual de cada item</td>
-<td>US16 - Como jogador, quero ver feedback visual ao adquirir novos itens.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP03 - Design de Itens</td>
-<td>C05 - Criar visuais distintos para cada item</td>
-<td>F09 - Criar animações de aquisição e uso visual de cada item</td>
-<td>US17 - Como desenvolvedor, quero que animações de itens não interrompam o fluxo do jogo.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP04 - Combate</td>
-<td>C07 - Implementar sistema de lançamento de dados</td>
-<td>F12 - Criar sistema de lançamento de dados com animação visual</td>
-<td>US22 - Como jogador, quero lançar dados com física realista e resultados claramente visíveis.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP04 - Combate</td>
-<td>C07 - Implementar sistema de lançamento de dados</td>
-<td>F12 - Criar sistema de lançamento de dados com animação visual</td>
-<td>US23 - Como desenvolvedor, quero calcular resultados com base na posição final do dado 3D.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP04 - Combate</td>
-<td>C07 - Implementar sistema de lançamento de dados</td>
-<td>F13 - Pegar o valor atual do dado no 3D e exibir resultado em HUD</td>
-<td>US24 - Como jogador, quero ver imediatamente o valor do dado em uma interface clara durante o combate.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP05 - Eventos Aleatórios</td>
-<td>C09 - Gerar eventos com consequências variadas</td>
-<td>F17 - Escrever descrições e consequências únicas para cada evento</td>
-<td>US32 - Como narrador, quero que eventos tenham textos imersivos que complementem o tom do jogo.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP05 - Eventos Aleatórios</td>
-<td>C09 - Gerar eventos com consequências variadas</td>
-<td>F17 - Escrever descrições e consequências únicas para cada evento</td>
-<td>US33 - Como jogador, quero entender claramente as consequências de minhas escolhas nos eventos.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP05 - Eventos Aleatórios</td>
-<td>C10 - Integrar eventos aleatórios ao fluxo de gameplay</td>
-<td>F18 - Definir pontos de ativação para eventos aleatórios no mapa</td>
-<td>US35 - Como jogador, quero poder selecionar o evento aleatório na trilha.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP06 - Sistema de Trilha</td>
-<td>C11 - Gerar caminhos de progressão aleatórios entre níveis</td>
-<td>F20 - Gerar caminhos aleatórios conectando cenários com regras de progressão</td>
-<td>US39 - Como desenvolvedor, quero garantir que caminhos sejam gerados aleatóriamente.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP06 - Sistema de Trilha</td>
-<td>C11 - Gerar caminhos de progressão aleatórios entre níveis</td>
-<td>F21 - Definir pesos e condições para gerar as bifurcações</td>
-<td>US40 - Como game designer, quero controlar a probabilidade de certos tipos de encontros aparecerem em cada nível.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP06 - Sistema de Trilha</td>
-<td>C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador</td>
-<td>F23 - Permitir seleção de caminho com botão de confirmação</td>
-<td>US44 - Como jogador, quero confirmar minha escolha de caminho antes de prosseguir para evitar erros.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP06 - Sistema de Trilha</td>
-<td>C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador</td>
-<td>F23 - Permitir seleção de caminho com botão de confirmação</td>
-<td>US45 - Como desenvolvedor, quero implementar um fluxo para ser seguido pelo jogador</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP07 - Loja</td>
-<td>C13 - Implementar interface de compra de cartas</td>
-<td>F25 - Criar pop-up de confirmação de compra com descrição da carta</td>
-<td>US48 - Como jogador, quero ver detalhes completos da carta antes de confirmar a compra.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP07 - Loja</td>
-<td>C13 - Implementar interface de compra de cartas</td>
-<td>F25 - Criar pop-up de confirmação de compra com descrição da carta</td>
-<td>US49 - Como UX designer, quero evitar compras acidentais com confirmação clara mas não intrusiva.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP07 - Loja</td>
-<td>C14 - Programar sistema de moedas e economia</td>
-<td>F27 - Exibir saldo do jogador na interface da loja</td>
-<td>US52 - Como jogador, quero ver meu saldo atualizado em tempo real durante compras.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM05</td>
-<td>EP12 - Diálogos</td>
-<td>C27 - Escrever os diálogos do jogo</td>
-<td>F45 - Organizar sistema de diálogo em planilha</td>
-<td>US88 - Como desenvolvedor, quero exportar diálogos para o engine a partir de planilhas.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM05</td>
-<td>EP12 - Diálogos</td>
-<td>C28 - Implementar sistema de taunt de elites e boss para o jogador</td>
-<td>F47 - Integrar sistema de taunts com entrada de combate do jogador</td>
-<td>US93 - Como desenvolvedor, quero implementar um sistema de triggers que não interrompa o fluxo do combate.</td>
-<td>5</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP02 - Criação de Personagens</td>
-<td>C04 - Integrar personagens com sistema de combate</td>
-<td>F07 - Integrar eventos de animação com sistema de combate</td>
-<td>US13 - Como desenvolvedor, quero sincronizar eventos de animação com triggers do sistema de combate.</td>
-<td>3.33</td>
-</tr>
-<tr>
-<td>TM02</td>
-<td>EP06 - Sistema de Trilha</td>
-<td>C11 - Gerar caminhos de progressão aleatórios entre níveis</td>
-<td>F21 - Definir pesos e condições para gerar as bifurcações</td>
-<td>US41 - Como jogador, quero sentir um senso de escolha e análise a partir das bifurcações.</td>
-<td>3</td>
-</tr>
-<tr>
-<td>TM04</td>
-<td>EP10 - Composição de Músicas</td>
-<td>C20 - Implementar variações dinâmicas na música conforme ações do jogador</td>
-<td>F39 - Adicionar transições suaves entre trilhas com base em gatilhos do jogo</td>
-<td>US77 - Como desenvolvedor, quero garantir que transições musicais não causem stuttering ou lag.</td>
-<td>3</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 - Criação de Cenários</td>
-<td>C02 - Otimizar performance visual dos cenários</td>
-<td>F03 - Definir aspectos técnicos referentes à performance</td>
-<td>US05 - Como desenvolvedor, quero otimizar polígonos e texturas para manter uma taxa estável de FPS</td>
-<td>1</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 - Criação de Cenários</td>
-<td>C02 - Otimizar performance visual dos cenários</td>
-<td>F03 - Definir aspectos técnicos referentes à performance</td>
-<td>US06 - Como jogador, quero uma experiência fluida sem travamentos durante transições de cenário.</td>
-<td>1</td>
-</tr>
-<tr>
-<td>TM01</td>
-<td>EP01 - Criação de Cenários</td>
-<td>C02 - Otimizar performance visual dos cenários</td>
-<td>F04 - Usar instâncias reutilizáveis para objetos do cenário</td>
-<td>US07 - Como desenvolvedor, quero reutilizar assets de cenário com variações para reduzir carga de memória.</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
 <h2 id="historico-de-revisoes">Histórico de Revisões<a class="headerlink" href="#historico-de-revisoes" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -3903,6 +1951,11 @@
 <td>2025-05-14</td>
 <td><a href="https://github.com/matix0">Mateus Vieira</a></td>
 <td>Backlog finalizado e priorizado</td>
+</tr>
+<tr>
+<td>2025-05-23</td>
+<td><a href="https://github.com/RufinoVfR">Vinícius Rufino</a></td>
+<td>Refatoração e Enriquecimento do Backlog</td>
 </tr>
 </tbody>
 </table>
