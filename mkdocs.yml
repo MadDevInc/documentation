@@ -50,6 +50,7 @@ nav:
       - Visão Geral: deathRoll/gdd/overview.md
       - Projeto:
           - Backlog: deathRoll/projeto/backlog.md
+          - Sprint 01: deathRoll/projeto/sprint1.md
       - Arte: deathRoll/gdd/art.md
       - Mecânicas de Jogo: deathRoll/gdd/gameplay.md
       - Narrativa: deathRoll/gdd/narrative.md
