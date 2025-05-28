@@ -91,72 +91,114 @@ As funcionalidades são tarefas técnicas concretas que implementam as capacidad
 | Capacidade ()                                                             | ID  | Funcionalidade                                                            |
 | ------------------------------------------------------------------------- | --- | ------------------------------------------------------------------------- |
 | C01 - Criar cenários únicos para cada círculo do Inferno                  | F01 | Criar um fundo temático para cada círculo                                 |
-| C01 - Criar cenários únicos para cada círculo do Inferno                  | F02 | Integrar o cenário com objetos temáticos do círculo                       |
-| C02 - Otimizar performance visual dos cenários                            | F03 | Definir aspectos técnicos referentes à performance                        |
-| C02 - Otimizar performance visual dos cenários                            | F04 | Usar instâncias reutilizáveis para objetos do cenário                     |
-| C03 - Criar modelos 2D para NPCs e inimigos                               | F05 | Criar os sprites para os inimigos                                         |
-| C03 - Criar modelos 2D para NPCs e inimigos                               | F06 | Criar os sprites para os NPCs                                             |
-| C04 - Integrar personagens com sistema de combate                         | F07 | Integrar eventos de animação com sistema de combate                       |
-| C05 - Criar visuais distintos para cada item                              | F08 | Designar ícones únicos para cada tipo de carta e dado                     |
-| C05 - Criar visuais distintos para cada item                              | F09 | Criar animações de aquisição e uso visual de cada item                    |
-| C06 - Integrar itens com sistema de menu (saco de dados e deck)           | F10 | Exibir dados coletados e regras do jogo no menu do "saco de dados"        |
-| C06 - Integrar itens com sistema de menu (saco de dados e deck)           | F11 | Implementar sistema de arrastar e soltar cartas no menu de deck           |
-| C07 - Implementar sistema de lançamento de dados                          | F12 | Criar sistema de lançamento de dados com animação visual                  |
-| C07 - Implementar sistema de lançamento de dados                          | F13 | Pegar o valor atual do dado no 3D e exibir resultado em HUD               |
-| C08 - Implementar o sistema das cartas                                    | F14 | Implementar sistema de combos a partir das cartas                         |
-| C08 - Implementar o sistema das cartas                                    | F15 | Aplicar efeitos específicos das cartas no inimigo ou jogador              |
-| C09 - Gerar eventos com consequências variadas                            | F16 | Criar tabela de eventos com tipos: positivos, negativos e neutros         |
-| C09 - Gerar eventos com consequências variadas                            | F17 | Escrever descrições e consequências únicas para cada evento               |
-| C10 - Integrar eventos aleatórios ao fluxo de gameplay                    | F18 | Definir pontos de ativação para eventos aleatórios no mapa                |
-| C10 - Integrar eventos aleatórios ao fluxo de gameplay                    | F19 | Integrar eventos aleatórios como interrupções no fluxo principal          |
-| C11 - Gerar caminhos de progressão aleatórios entre níveis                | F20 | Gerar caminhos aleatórios conectando cenários com regras de progressão    |
-| C11 - Gerar caminhos de progressão aleatórios entre níveis                | F21 | Definir pesos e condições para gerar as bifurcações                       |
-| C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador     | F22 | Criar mapa da trilha com visualização dos caminhos possíveis              |
-| C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador     | F23 | Permitir seleção de caminho com botão de confirmação                      |
-| C13 - Implementar interface de compra de cartas                           | F24 | Exibir loja com seções de cartas disponíveis, raridade e custo            |
-| C13 - Implementar interface de compra de cartas                           | F25 | Criar pop-up de confirmação de compra com descrição da carta              |
-| C14 - Programar sistema de moedas e economia                              | F26 | Implementar sistema de moeda obtida em batalhas ou eventos                |
-| C14 - Programar sistema de moedas e economia                              | F27 | Exibir saldo do jogador na interface da loja                              |
-| C15 - Criar estrutura de menus                                            | F28 | Criar menus para: Jogo, Loja, Deck, Dados, Pausa, Configurações, Créditos |
-| C15 - Criar estrutura de menus                                            | F29 | Programar navegação entre menus por teclado, mouse e controle             |
-| C16 - Implementar transições visuais entre menus                          | F30 | Adicionar transições animadas entre menus                                 |
-| C16 - Implementar transições visuais entre menus                          | F31 | Implementar sons de menu sincronizados com animações                      |
-| C17 - Mostrar informações de combate e status do jogador                  | F32 | Exibir status do jogador (vida, cartas, dados) durante o combate          |
-| C17 - Mostrar informações de combate e status do jogador                  | F33 | Exibir informações do inimigo                                             |
-| C18 - Exibir efeitos visuais em ações como dano ou combo                  | F34 | Criar efeitos visuais de danos e combos                                   |
-| C18 - Exibir efeitos visuais em ações como dano ou combo                  | F35 | Criar efeitos visuais de interação com objetos                            |
-| C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno           | F36 | Compor trilhas sonoras únicas para cada círculo com base em ambientação   |
-| C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno           | F37 | Mixar músicas em camadas (base, combate, tensão) para cada cenário        |
-| C20 - Implementar variações dinâmicas na música conforme ações do jogador | F38 | Mudar a intensidade da trilha com base na ação do jogador (ex: combate)   |
-| C20 - Implementar variações dinâmicas na música conforme ações do jogador | F39 | Adicionar transições suaves entre trilhas com base em gatilhos do jogo    |
-| C21 - Adicionar sons para interações, menus e ações de combate            | F40 | Criar sons para interações e menus                                        |
-| C21 - Adicionar sons para interações, menus e ações de combate            | F41 | Adicionar sons únicos para usos de carta e efeitos de combo               |
-| C22 - Integrar efeitos sonoros com sistema de animação                    | F42 | Integrar sons com animações de ataque e interação                         |
-| C22 - Integrar efeitos sonoros com sistema de animação                    | F43 | Integrar sons dos NPCs                                                    |
-| C27 - Escrever os diálogos do jogo                                        | F44 | Escrever diálogos ramificados para personagens importantes                |
-| C27 - Escrever os diálogos do jogo                                        | F45 | Organizar sistema de diálogo em planilha                                  |
-| C28 - Implementar sistema de taunt de elites e boss para o jogador        | F46 | Criar falas provocativas para elites e chefes com base no combate         |
-| C28 - Implementar sistema de taunt de elites e boss para o jogador        | F47 | Integrar sistema de taunts com entrada de combate do jogador              |
-| C29 - Integrar o sistema de artefatos                                     | F48 | Criar o menu de artefatos                                                 |
-| C29 - Integrar o sistema de artefatos                                     | F49 | Desbloquear os artefatos como colecionáveis                               |
-
-## Backlog Priorizado (WIP)
-
-Work In Progress
+| C03 - Criar modelos 2D para NPCs e inimigos                               | F02 | Criar os sprites para os inimigos                                         |
+| C03 - Criar modelos 2D para NPCs e inimigos                               | F03 | Criar os sprites NPCs                                                     |
+| C04 - Integrar personagens com sistema de combate                         | F04 | Integrar eventos de animação com sistema de combate                       |
+| C05 - Criar visuais distintos para cada item                              | F05 | Designar ícones únicos para cada tipo de carta e dado                     |
+| C05 - Criar visuais distintos para cada item                              | F06 | Criar animações de aquisição e uso visual de cada item                    |
+| C06 - Integrar itens com sistema de menu (saco de dados e deck)           | F07 | Exibir dados coletados e regras do jogo no menu do "saco de dados"        |
+| C06 - Integrar itens com sistema de menu (saco de dados e deck)           | F08 | Implementar sistema de arrastar e soltar cartas no menu de deck           |
+| C07 - Implementar sistema de lançamento de dados                          | F09 | Criar sistema de lançamento de dados com animação visual                  |
+| C07 - Implementar sistema de lançamento de dados                          | F10 | Pegar o valor atual do dado no 3D e exibir resultado em HUD               |
+| C08 - Implementar o sistema das cartas                                    | F11 | Implementar novos modificadores de cartas                                 |
+| C09 - Gerar eventos com consequências variadas                            | F12 | Criar tabela de eventos com tipos: positivos, negativos e neutros         |
+| C09 - Gerar eventos com consequências variadas                            | F13 | Escrever descrições e consequências únicas para cada evento               |
+| C10 - Integrar eventos aleatórios ao fluxo de gameplay                    | F14 | Definir pontos de ativação para eventos aleatórios no mapa                |
+| C11 - Gerar caminhos de progressão aleatórios entre níveis                | F15 | Gerar caminhos aleatórios conectando cenários                             |
+| C11 - Gerar caminhos de progressão aleatórios entre níveis                | F16 | Definir pesos e condições para gerar as bifurcações                       |
+| C12 - Exibir mapa da trilha com opções de escolha visíveis ao jogador     | F17 | Implementar interação com o mapa                                          |
+| C13 - Implementar interface de compra de cartas                           | F18 | Exibir loja com seções de cartas, dados e artefatos                       |
+| C14 - Programar sistema de moedas e economia                              | F19 | Implementar sistema de moeda obtida em batalhas ou eventos                |
+| C14 - Programar sistema de moedas e economia                              | F20 | Exibir saldo do jogador na interface durante o jogo                       |
+| C15 - Criar estrutura de menus                                            | F21 | Criar menu de Pause                                                       |
+| C15 - Criar estrutura de menus                                            | F22 | Criar menu de principal                                                   |
+| C15 - Criar estrutura de menus                                            | F23 | Criar Opções do menu de Pause                                             |
+| C16 - Implementar transições visuais entre menus                          | F24 | Adicionar transição de fase ao olhar para o mapa                          |
+| C16 - Implementar transições visuais entre menus                          | F25 | Implementar sons de menu sincronizados com animações                      |
+| C17 - Mostrar informações de combate e status do jogador                  | F26 | Exibir vida do jogador durante o combate (velas)                          |
+| C17 - Mostrar informações de combate e status do jogador                  | F27 | Diminuir a iluminação conforme o jogador perde vida                       |
+| C18 - Exibir efeitos visuais em ações como dano ou combo                  | F28 | Criar efeitos visuais de interação com objetos                            |
+| C18 - Exibir efeitos visuais em ações como dano ou combo                  | F29 | Implementar os efeitos visuais de interação com objetos                   |
+| C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno           | F30 | Compor trilhas sonoras únicas para cada círculo com base em ambientação   |
+| C19 - Criar trilhas sonoras adaptadas a cada círculo do Inferno           | F31 | Mixar músicas em camadas (base, combate, tensão) para cada cenário        |
+| C20 - Implementar variações dinâmicas na música conforme ações do jogador | F32 | Adicionar transições suaves entre trilhas com base em gatilhos do jogo    |
+| C21 - Adicionar sons para interações, menus e ações de combate            | F33 |     Adicionar sons únicos para usos de carta e efeitos de combo           |
+| C22 - Integrar efeitos sonoros com sistema de animação                    | F34 | Integrar sons dos NPCs                                                    |
+| C27 - Escrever os diálogos do jogo                                        | F35 | Escrever diálogos para personagens importantes                            |
+| C27 - Escrever os diálogos do jogo                                        | F36 | Organizar sistema de diálogo em planilha                                  |
+| C28 - Implementar sistema de taunt de elites e boss para o jogador        | F37 | Criar falas provocativas para elites e chefes                             |
+| C28 - Implementar sistema de taunt de elites e boss para o jogador        | F38 | Integrar sistema de taunts com entrada de combate do jogador              |
+| C29 - Integrar o sistema de artefatos                                     | F39 | Criar o menu de artefatos                                                 |
+| C29 - Integrar o sistema de artefatos                                     | F40 | Desbloquear os artefatos como colecionáveis                               |
 
 ## Priorização dos Itens do Backlog
 
 A priorização dos itens do backlog foi baseada nos requisitos considerados mais relevantes. Os critérios utilizados foram:
 
 - **Maior Importância**
-- **Menor Esforço**
-- **Menor Risco**
+- **Menor Complexidade**
+- **Menor Risco & Incerteza**
 
 Para determinar a prioridade de cada item, utilizou-se a seguinte fórmula:
 
-**Prioridade = Importância / (Esforço + Risco)**
+**Prioridade = (2 * Importância) / 1 + ((2 * Risco&Incerteza) + Complexidade)**
 
 Essa abordagem visa maximizar a entrega de valor, priorizando tarefas rápidas e impactantes. Com isso, buscamos garantir um progresso ágil e eficiente ao longo do desenvolvimento do jogo.
+
+## Backlog Priorizado (WIP)
+
+WIP
+
+### Backlog - Desenvolvedores
+
+| ID e Funcionalidade                                         | I | R&I | C | D | Prioridade |
+|-------------------------------------------------------------|---|-----|---|---|------------|
+| F08: Implementar sistema de arrastar e soltar cartas no menu de deck | 5 | 1   | 1 | 1 | ∞          |
+| F09: Criar sistema de lançamento de dados com animação visual       | 5 | 1   | 1 | 1 | ∞          |
+| F10: Pegar o valor atual do dado no 3D e exibir resultado em HUD    | 5 | 1   | 1 | 1 | ∞          |
+| F11: Implementar novos modificadores de cartas                      | 5 | 1   | 1 | 1 | ∞          |
+| F26: Exibir vida do jogador durante o combate (velas)              | 5 | 1   | 1 | 1 | **2.50**   |
+| F07: Exibir dados coletados e regras no menu do "saco de dados"     | 5 | 1   | 1 | 1 | **2.50**   |
+| F20: Exibir saldo do jogador na interface durante o jogo           | 5 | 1   | 1 | 1 | **2.50**   |
+| F17: Implementar interação com o mapa                               | 5 | 1   | 1 | 2 | **1.25**   |
+| F27: Diminuir a iluminação conforme o jogador perde vida           | 4 | 1   | 1 | 2 | **1.00**   |
+| F14: Definir pontos de ativação para eventos aleatórios no mapa    | 5 | 3   | 5 | 1 | **0.83**   |
+| F15: Gerar caminhos aleatórios conectando cenários                 | 5 | 3   | 5 | 1 | **0.83**   |
+| F18: Exibir loja com cartas, dados e artefatos                     | 5 | 1   | 1 | 3 | **0.83**   |
+| F21: Criar menu de pause                                           | 2 | 2   | 2 | 1 | **0.57**   |
+| F39: Criar o menu de artefatos                                     | 1 | 1   | 1 | 1 | **0.50**   |
+| F24: Adicionar transição de fase ao olhar para o mapa              | 2 | 1   | 1 | 2 | **0.50**   |
+| F38: Integrar sistema de taunts com entrada de combate do jogador  | 3 | 2   | 2 | 2 | **0.43**   |
+| F04: Integrar eventos de animação com sistema de combate           | 5 | 3   | 5 | 2 | **0.42**   |
+| F29: Implementar os efeitos visuais de interação com objetos       | 2 | 1   | 2 | 3 | **0.27**   |
+| F25: Implementar sons de menu sincronizados com animações          | 1 | 1   | 1 | 2 | **0.25**   |
+| F34: Integrar sons dos NPCs                                        | 1 | 1   | 1 | 2 | **0.25**   |
+| F40: Desbloquear os artefatos como colecionáveis                   | 1 | 1   | 1 | 2 | **0.25**   |
+| F22: Criar menu principal                                          | 1 | 1   | 1 | 3 | **0.17**   |
+| F23: Criar Opções do menu de Pause                                 | 2 | 4   | 5 | 2 | **0.14**   |
+| F06: Criar animações de aquisição e uso visual de cada item        | 1 | 5   | 3 | 1 | **0.14**   |
+
+### Backlog - Arte
+
+| ID e Funcionalidade                                                     | I | R&I | C | D | Prioridade |
+|-------------------------------------------------------------------------|---|-----|---|---|------------|
+| F05: Designar ícones únicos para cada tipo de carta e dado (Em andamento) | 5 | 1   | 1 | 1 | ∞          |
+| F02: Criar os sprites para os inimigos                                  | 5 | 2   | 3 | 1 | **0.63**   |
+| F03: Criar os sprites para os NPCs                                      | 3 | 1   | 1 | 1 | **0.75**   |
+| F01: Criar um fundo temático para cada círculo                          | 1 | 1   | 5 | 1 | **0.14**   |
+| F28: Criar efeitos visuais de interação com objetos                     | 2 | 1   | 2 | 3 | **0.27**   |
+
+### Backlog - Game Design
+
+WIP
+
+### Backlog - Música
+
+WIP
+
+### Backlog - Storytelling
+
+WIP
 
 ---
 
@@ -167,3 +209,4 @@ Essa abordagem visa maximizar a entrega de valor, priorizando tarefas rápidas e
 | 2025-05-14 | [Mateus Vieira](https://github.com/matix0) | Criação do modelo SAFe sem o backlog final         |
 | 2025-05-14 | [Mateus Vieira](https://github.com/matix0) | Backlog finalizado e priorizado                    |
 | 2025-05-23 | [Vinícius Rufino](https://github.com/RufinoVfR) | Refatoração e Enriquecimento do Backlog         |
+| 2025-05-27 | [Vinícius Rufino](https://github.com/RufinoVfR) | Refatoração e Correção das Funcionalidades         |
